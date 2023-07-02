@@ -1,0 +1,170 @@
+/* .img__container {
+    background-color: #ccc;
+} */
+#navigator {
+  width: 270px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: -270px;
+  background-color: #00aeff;
+
+  z-index: 10;
+}
+#nav {
+  width: 250px;
+  height: 100%;
+  text-align: center;
+  margin-top: 70px;
+  padding: 0;
+}
+#nav_tab {
+  width: 100%;
+  display: block;
+}
+#nav_tab a {
+  width: 100% !important;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0 15px;
+  text-align: center;
+  margin-top: 10px;
+
+  transition: 0.35s ease;
+  overflow: scroll;
+}
+
+.menu-icon {
+  /* width: 150px; */
+  height: 35px;
+
+  top: 19px;
+  right: 15px !important;
+  z-index: 12;
+  cursor: pointer;
+}
+
+.menu-icon div {
+  width: 30px;
+  height: 3px;
+  background: black;
+  margin: 5px;
+  transition: all 0.35s;
+  border-radius: 2px;
+}
+.on .line_one {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+.on .line_two {
+  opacity: 0;
+}
+.on .line_three {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+#dark {
+  width: 100%;
+  height: 50000rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 5;
+  display: none;
+}
+.img__container img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+.search-container input::placeholder {
+  color: #ccc;
+}
+.search-container input {
+  outline: none;
+}
+.first__section {
+  background-color: #faf8f4;
+}
+.text__gray {
+  color: #ccc;
+}
+.icon__gray {
+  background-color: #e2dfd3;
+}
+.orange__bg {
+  background-color: #ffefe2;
+}
+.green__bg {
+  background-color: #effcef;
+}
+.blue__bg {
+  background-color: #e6f5f9;
+}
+.silver__bg {
+  background-color: #f4f6fa;
+}
+.circle__percentage {
+  width: 50px;
+  height: 50px;
+}
+.w--50 {
+  width: 50px;
+}
+.w-250 {
+  width: 250px;
+}
+.w-h-30 {
+  width: 30px;
+  height: 30px;
+}
+.progress-circle {
+  position: relative;
+  display: inline-block;
+  width: 100px; /* adjust the width and height as needed */
+  height: 100px;
+  border-radius: 50%;
+  background-color: #e9ecef; /* set the background color of the circle */
+}
+
+.progress-circle-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  clip: rect(
+    0,
+    50px,
+    100px,
+    0
+  ); /* adjust the clip values based on the desired percentage */
+  background-color: #17a2b8; /* set the color of the border based on your design */
+}
+
+.progress-circle-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px; /* adjust the font size and other properties as needed */
+  font-weight: bold;
+  color: #000; /* set the color of the percentage label */
+}
+@media (min-width: 300px) and (max-width: 768px) {
+  .orange__bg,
+  .blue__bg,
+  .silver__bg,
+  .green__bg,
+  .assets {
+    width: 100% !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .aside {
+    justify-content: flex-start !important;
+  }
+}
