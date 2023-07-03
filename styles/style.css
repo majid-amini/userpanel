@@ -1,3 +1,19 @@
+:root {
+  --primary-color: #2d2d2d;
+  --primary-color: #00aeff;
+  --lightGray-color: #eee;
+  --darkGray-color: #ccc;
+  --mediumGray-color: #e2dfd3;
+  --light-color: rgba(255, 255, 255, 0.8);
+  --dark-color: rgba(0, 0, 0, 0.8);
+  --black-color: #000;
+  --snowWhite-color: #faf8f4;
+  --lightOrange-color: #ffefe2;
+  --lightGreen-color: #effcef;
+  --lightBlue-color: #e6f5f9;
+  --lightSilver-color: #f4f6fa;
+}
+
 @font-face {
   font-family: "iranyekan";
   font-style: normal;
@@ -16,7 +32,7 @@ p {
 }
 
 body {
-  background-color: #eee;
+  background-color: var(--lightGray-color);
 }
 #navigator {
   width: 270px;
@@ -24,8 +40,7 @@ body {
   position: fixed;
   top: 0;
   right: -270px;
-  background-color: #00aeff;
-
+  background-color: var(--primary-color);
   z-index: 10;
 }
 #nav {
@@ -41,7 +56,7 @@ body {
 }
 #nav_tab a {
   width: 100% !important;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--light-color);
   font-size: 15px;
   font-weight: bold;
   padding: 0 15px;
@@ -65,7 +80,7 @@ body {
 .menu-icon div {
   width: 30px;
   height: 3px;
-  background: black;
+  background: var(--black-color);
   margin: 5px;
   transition: all 0.35s;
   border-radius: 2px;
@@ -87,42 +102,42 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--dark-color);
   z-index: 5;
   display: none;
 }
 .img__container img {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   object-fit: cover;
 }
 
 .search-container input::placeholder {
-  color: #ccc;
+  color: var(--darkGray-color);
 }
 .search-container input {
   outline: none;
 }
 .first__section {
-  background-color: #faf8f4;
+  background-color: var(--snowWhite-color);
 }
 .text__gray {
-  color: #ccc;
+  color: var(--darkGray-color);
 }
 .icon__gray {
-  background-color: #e2dfd3;
+  background-color: var(--mediumGray-color);
 }
 .orange__bg {
-  background-color: #ffefe2;
+  background-color: var(--lightOrange-color);
 }
 .green__bg {
-  background-color: #effcef;
+  background-color: var(--lightGreen-color);
 }
 .blue__bg {
-  background-color: #e6f5f9;
+  background-color: var(--lightBlue-color);
 }
 .silver__bg {
-  background-color: #f4f6fa;
+  background-color: var(--lightSilver-color);
 }
 .circle__percentage {
   width: 50px;
@@ -141,6 +156,9 @@ body {
 .w--100 {
   width: 100px;
 }
+.w--200 {
+  width: 200px;
+}
 .font-size-14 {
   font-size: 14px;
 }
@@ -148,42 +166,9 @@ body {
   width: 50px;
   height: 50px;
 }
-.progress-circle {
-  position: relative;
-  display: inline-block;
-  width: 100px; /* adjust the width and height as needed */
-  height: 100px;
-  border-radius: 50%;
-  background-color: #e9ecef; /* set the background color of the circle */
-}
 
-.progress-circle-inner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  clip: rect(
-    0,
-    50px,
-    100px,
-    0
-  ); /* adjust the clip values based on the desired percentage */
-  background-color: #17a2b8; /* set the color of the border based on your design */
-}
-
-.progress-circle-label {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 16px; /* adjust the font size and other properties as needed */
-  font-weight: bold;
-  color: #000; /* set the color of the percentage label */
-}
 .statistic__image {
-  object-fit: cover;
+  object-fit: contain;
   width: 100%;
 }
 @media (min-width: 300px) and (max-width: 768px) {
@@ -210,13 +195,12 @@ body {
   .img__container {
     text-align: left !important;
   }
- 
 }
 @media (min-width: 1024px) {
   .aside {
     width: 250px !important;
   }
- .assets {
-  width: 220px !important;
- }
+  .assets {
+    width: 220px !important;
+  }
 }
