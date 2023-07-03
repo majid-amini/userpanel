@@ -45,7 +45,7 @@
             <ul id="nav" class="d-flex flex-column">
               <li id="nav_tab">
                 <a href="">
-                  <div class=" d-flex align-items-center gap-3 me-5">
+                  <div class="d-flex align-items-center gap-3 me-5">
                     <i class="fa-solid fa-house"></i>
                     <!-- <img  src="./img/home.png"  alt=""> -->
                     <span class="fw-bold">خانه</span>
@@ -96,7 +96,7 @@
           <li>
             <a href="">
               <div class="d-flex align-items-center gap-2">
-                <img src="./img/home.png" alt="">
+                <img src="./img/home.png" alt="" />
                 <span class="fw-bold">خانه</span>
               </div>
             </a>
@@ -104,7 +104,7 @@
           <li>
             <a href="">
               <div class="d-flex align-items-center gap-2">
-                <img src="./img/trophy.png" alt="">
+                <img src="./img/trophy.png" alt="" />
                 <span class="fw-bold">پروژه ها</span>
               </div>
             </a>
@@ -112,7 +112,7 @@
           <li>
             <a href="">
               <div class="d-flex align-items-center gap-2">
-                <img src="./img/wallet.png" alt="">
+                <img src="./img/wallet.png" alt="" />
                 <span class="fw-bold"> صورتحساب</span>
               </div>
             </a>
@@ -120,7 +120,7 @@
           <li>
             <a href="">
               <div class="d-flex align-items-center gap-2">
-                <img src="./img/chart.png" alt="">
+                <img src="./img/chart.png" alt="" />
                 <span class="fw-bold"> آمار</span>
               </div>
             </a>
@@ -128,7 +128,7 @@
           <li>
             <a href="">
               <div class="d-flex align-items-center gap-2">
-                <img src="./img/setting.png" alt="">
+                <img src="./img/setting.png" alt="" />
                 <span class="fw-bold"> تنظیمات</span>
               </div>
             </a>
@@ -136,7 +136,7 @@
         </ul>
       </aside>
       <main
-        class="d-flex flex-column flex-lg-row gap-2 gap-xl-4 p-lg-4  mr-3 mr-md-0 w-100"
+        class="d-flex flex-column flex-lg-row gap-2 gap-xl-4 p-lg-4 mr-3 mr-md-0 w-100"
       >
         <div class="main__info border p-4 rounded-4 shadow shadow-md">
           <div
@@ -183,9 +183,9 @@
             </div>
             <div class="d-flex flex-column align-items-center gap-2 p-2">
               <div class="d-flex align-items-center gap-2">
-              <i class="fa-solid fa-shop icon__gray p-2 rounded-4"></i>
-              <span class="text__gray"> سفارش ها</span>
-            </div>
+                <i class="fa-solid fa-shop icon__gray p-2 rounded-4"></i>
+                <span class="text__gray"> سفارش ها</span>
+              </div>
               <span class="display-6 fw-bold">5100</span>
               <span class="text__gray">در روز</span>
             </div>
@@ -232,7 +232,7 @@
                 <span class="font-size-14">مجموع فروش امروز</span>
                 <span class="fw-bold fs-5">$500</span>
               </div>
-    
+
               <div
                 id="progress-3"
                 class="progress-container position-relative d-flex justify-content-center align-items-center"
@@ -248,7 +248,7 @@
                 <span class="font-size-14">مجموع فروش امروز</span>
                 <span class="fw-bold fs-5">$500</span>
               </div>
-             
+
               <div
                 id="progress-4"
                 class="progress-container position-relative d-flex justify-content-center align-items-center"
@@ -259,7 +259,7 @@
           </div>
         </div>
         <div
-          class="assets bg-dark d-flex flex-column gap-4 justify-content-between align-items-center pt-3  rounded-4 shadow shadow-md overflow-hidden"
+          class="assets bg-dark d-flex flex-column gap-4 justify-content-between align-items-center pt-3 rounded-4 shadow shadow-md overflow-hidden"
         >
           <div>
             <h4 class="text-light fs-6">میزان دارایی</h4>
@@ -270,8 +270,7 @@
             <div
               class="bg-light p-2 w-h-30 d-flex justify-content-center align-items-center rounded-circle"
             >
-              
-              <img src="./img/discount.png" alt="">
+              <img src="./img/discount.png" alt="" />
             </div>
             <div class="text-light d-flex flex-column w--100 text-center">
               <span class="fw-bold">230k</span>
@@ -299,7 +298,7 @@
               class="bg-light p-2 w-h-30 d-flex justify-content-center align-items-center rounded-circle"
             >
               <!-- <i class="fa-solid fa-briefcase"></i> -->
-              <img src="./img/briefcase.png" alt="">
+              <img src="./img/briefcase.png" alt="" />
             </div>
             <div class="text-light d-flex flex-column w--100 text-center">
               <span class="fw-bold">230k</span>
@@ -314,7 +313,7 @@
               class="bg-light p-2 w-h-30 d-flex justify-content-center align-items-center rounded-circle"
             >
               <!-- <i class="fa-brands fa-paypal"></i> -->
-              <img src="./img/wallet.png" alt="">
+              <img src="./img/wallet.png" alt="" />
             </div>
             <div class="text-light d-flex flex-column w--100 text-center">
               <span class="fw-bold">9700k</span>
@@ -340,171 +339,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="./progress.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".menu-icon").click(function () {
-          if ($("#navigator").css("right") == "-270px") {
-            $("#navigator").animate({ right: "0px" }, 350);
-            // $(".menu-icon").animate({ right: "200px !important" }, 350);
-            $("#dark").css("display", "block");
-
-            var scrollPosition = [
-              self.pageXOffset ||
-                document.documentElement.scrollLeft ||
-                document.body.scrollLeft,
-              self.pageYOffset ||
-                document.documentElement.scrollTop ||
-                document.body.scrollTop,
-            ];
-            var html = jQuery("html"); // it would make more sense to apply this to body, but IE7 won't have that
-            html.data("scroll-position", scrollPosition);
-            html.data("previous-overflow", html.css("overflow"));
-            html.css("overflow", "hidden");
-            window.scrollTo(scrollPosition[0], scrollPosition[1]);
-          } else {
-            $("#navigator").animate({ right: "-270px" }, 350);
-            $(this).animate({ right: "0px" }, 350);
-            $("#dark").css("display", "none");
-
-            var html = jQuery("html");
-            var scrollPosition = html.data("scroll-position");
-            html.css("overflow", html.data("previous-overflow"));
-            window.scrollTo(scrollPosition[0], scrollPosition[1]);
-          }
-        });
-
-        $(".menu-icon").click(function () {
-          $(this).toggleClass("on");
-        });
-
-        $(".bodyView__changeSide").click(function () {
-          var imgFront = $(".body-wrapper-front");
-          var imgback = $(".body-wrapper-back");
-
-          if (imgFront[0].style.display == "block") {
-            $(".bodyView__front").removeClass("changeBtnColor");
-            $(".bodyView__back").addClass("changeBtnColor");
-
-            imgFront.hide();
-            imgback.fadeIn();
-          } else {
-            $(".bodyView__back").removeClass("changeBtnColor");
-            $(".bodyView__front").addClass("changeBtnColor");
-            imgback.hide();
-            imgFront.fadeIn();
-          }
-        });
-
-        $(".basketIcon").click(function () {
-          if ($(".basket__total").css("left") == "-400px") {
-            $(".basket__total").animate({ left: "0px" }, 300);
-            $("#dark").css("display", "block");
-
-            var scrollPosition = [
-              self.pageXOffset ||
-                document.documentElement.scrollLeft ||
-                document.body.scrollLeft,
-              self.pageYOffset ||
-                document.documentElement.scrollTop ||
-                document.body.scrollTop,
-            ];
-            var html = jQuery("html"); // it would make more sense to apply this to body, but IE7 won't have that
-            html.data("scroll-position", scrollPosition);
-            html.data("previous-overflow", html.css("overflow"));
-            html.css("overflow", "hidden");
-            window.scrollTo(scrollPosition[0], scrollPosition[1]);
-          }
-        });
-
-        $(".delete").click(function () {
-          $(".basket__total").animate({ left: "-400px" }, 300);
-          $("#dark").css("display", "none");
-          var html = jQuery("html");
-          var scrollPosition = html.data("scroll-position");
-          html.css("overflow", html.data("previous-overflow"));
-          window.scrollTo(scrollPosition[0], scrollPosition[1]);
-        });
-
-        //addition function for basket
-        $(".fa-plus").each(function () {
-          $(this).click(function () {
-            var quantity = $(this).siblings(".qty")[0];
-            var productPrice = $(this)
-              .parent()
-              .parent()
-              .parent()
-              .find(".productPrice__span")[0].innerText;
-            var subTotal = $(this)
-              .parent()
-              .parent()
-              .parent()
-              .find(".subtotal")[0];
-
-            $(subTotal).text(function () {
-              return Number(quantity.innerText * productPrice);
-            });
-            $(quantity).text(function () {
-              return +this.textContent + 1;
-            });
-          });
-        });
-
-        //subtraction function for basket
-        $(".fa-minus").each(function () {
-          $(this).click(function () {
-            var quantity = $(this).siblings(".qty")[0];
-            var productPrice = $(this)
-              .parent()
-              .parent()
-              .parent()
-              .find(".productPrice__span")[0].innerText;
-            var subTotal = $(this)
-              .parent()
-              .parent()
-              .parent()
-              .find(".subtotal")[0];
-
-            if (quantity.innerText > 1) {
-              $(subTotal).text(function () {
-                return Number(quantity.innerText * productPrice);
-              });
-              $(quantity).text(function () {
-                console.log(quantity);
-                return +this.textContent - 1;
-              });
-            } else {
-              this.closest(".basket__card").remove();
-            }
-          });
-        });
-
-        $(".deleteItem").click(function () {
-          $(this).closest(".basket__card").remove();
-        });
-
-        $(".fa-toggle-on").click(function () {
-          if ($(this).hasClass("fa-toggle-on")) {
-            $(this).removeClass("fa-toggle-on");
-            $(this).addClass("fa-toggle-off");
-            $(".menu-icon div").css("color", "white !important");
-            $(".fa-basket-shopping").css("color", "white");
-          } else {
-            $(this).addClass("fa-toggle-on");
-            $(this).removeClass("fa-toggle-off");
-            $(".fa-basket-shopping").css("color", "black");
-          }
-
-          $("body").toggleClass("darkMode");
-        });
-      });
-
-      $(window).scroll(function () {
-        if ($(this).scrollTop() > 1) {
-          $(".header-top").addClass("fixed");
-        } else {
-          $(".header-top").removeClass("fixed");
-        }
-      });
-    </script>
+    <script src="./script.js"></script>
   </body>
 </html>
