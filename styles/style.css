@@ -1,6 +1,23 @@
-/* .img__container {
-    background-color: #ccc;
-} */
+@font-face {
+  font-family: "iranyekan";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/iranyekanwebmediumfanum.eot");
+  src: url("/fonts/iranyekanwebmediumfanum.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-8 */ url("/fonts/iranyekanwebmediumfanum.woff") format("woff"),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+      url("/fonts/iranyekanwebmediumfanum.ttf") format("truetype");
+}
+html,
+div,
+p {
+  font-family: "iranyekan";
+}
+
+body {
+  background-color: #eee;
+}
 #navigator {
   width: 270px;
   height: 100%;
@@ -15,7 +32,7 @@
   width: 250px;
   height: 100%;
   text-align: center;
-  margin-top: 70px;
+  margin-top: 90px;
   padding: 0;
 }
 #nav_tab {
@@ -79,6 +96,7 @@
   height: 60px;
   object-fit: cover;
 }
+
 .search-container input::placeholder {
   color: #ccc;
 }
@@ -120,6 +138,16 @@
   width: 30px;
   height: 30px;
 }
+.w--100 {
+  width: 100px;
+}
+.font-size-14 {
+  font-size: 14px;
+}
+.progress-container {
+  width: 50px;
+  height: 50px;
+}
 .progress-circle {
   position: relative;
   display: inline-block;
@@ -154,6 +182,10 @@
   font-weight: bold;
   color: #000; /* set the color of the percentage label */
 }
+.statistic__image {
+  object-fit: cover;
+  width: 100%;
+}
 @media (min-width: 300px) and (max-width: 768px) {
   .orange__bg,
   .blue__bg,
@@ -167,4 +199,24 @@
   .aside {
     justify-content: flex-start !important;
   }
+  .img__container {
+    width: 100%;
+  }
+  .search-container {
+    width: 500px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .img__container {
+    text-align: left !important;
+  }
+ 
+}
+@media (min-width: 1024px) {
+  .aside {
+    width: 250px !important;
+  }
+ .assets {
+  width: 220px !important;
+ }
 }

@@ -23,17 +23,18 @@
     />
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/progressbar.js@1.1.0/dist/progressbar.js"></script>
     <title>userPanel</title>
   </head>
   <body>
     <div
-      class="d-flex flex-column flex-md-row gap-2 container mt-3 mt-md-5 w-100"
+      class="bg-white d-flex flex-column flex-lg-row gap-2 container mt-3 mt-lg-5 w-100 rounded-4"
     >
       <aside
-        class="px-2 aside d-flex justify-content-around align-items-center flex-md-column"
+        class="p-4 aside d-flex justify-content-around align-items-center flex-lg-column"
       >
         <section
-          class="d-md-none container header-top d-flex align-items-center justify-content-between p-3"
+          class="d-lg-none container header-top d-flex align-items-center justify-content-between p-3"
         >
           <div class="menu-icon">
             <div class="line_one"></div>
@@ -44,8 +45,9 @@
             <ul id="nav" class="d-flex flex-column">
               <li id="nav_tab">
                 <a href="">
-                  <div class="d-flex align-items-center gap-3 me-5">
+                  <div class=" d-flex align-items-center gap-3 me-5">
                     <i class="fa-solid fa-house"></i>
+                    <!-- <img  src="./img/home.png"  alt=""> -->
                     <span class="fw-bold">خانه</span>
                   </div>
                 </a>
@@ -86,47 +88,47 @@
           </div>
         </section>
 
-        <div class="img__container pt-2">
+        <div class="img__container text-center">
           <img src="./img/profile.jpg" class="rounded-circle" alt="" />
         </div>
 
-        <ul class="mt-2 p-2 d-none d-md-flex flex-md-column gap-3">
+        <ul class="mt-2 p-2 d-none d-lg-flex flex-lg-column gap-4">
           <li>
             <a href="">
-              <div class="d-flex align-items-center gap-3">
-                <i class="fa-solid fa-house"></i>
+              <div class="d-flex align-items-center gap-2">
+                <img src="./img/home.png" alt="">
                 <span class="fw-bold">خانه</span>
               </div>
             </a>
           </li>
           <li>
             <a href="">
-              <div class="d-flex align-items-center gap-3">
-                <i class="fa-solid fa-trophy"></i>
+              <div class="d-flex align-items-center gap-2">
+                <img src="./img/trophy.png" alt="">
                 <span class="fw-bold">پروژه ها</span>
               </div>
             </a>
           </li>
           <li>
             <a href="">
-              <div class="d-flex align-items-center gap-3">
-                <i class="fa-solid fa-wallet"></i>
+              <div class="d-flex align-items-center gap-2">
+                <img src="./img/wallet.png" alt="">
                 <span class="fw-bold"> صورتحساب</span>
               </div>
             </a>
           </li>
           <li>
             <a href="">
-              <div class="d-flex align-items-center gap-3">
-                <i class="fa-solid fa-chart-column"></i>
+              <div class="d-flex align-items-center gap-2">
+                <img src="./img/chart.png" alt="">
                 <span class="fw-bold"> آمار</span>
               </div>
             </a>
           </li>
           <li>
             <a href="">
-              <div class="d-flex align-items-center gap-3">
-                <i class="fa-solid fa-gear"></i>
+              <div class="d-flex align-items-center gap-2">
+                <img src="./img/setting.png" alt="">
                 <span class="fw-bold"> تنظیمات</span>
               </div>
             </a>
@@ -134,10 +136,12 @@
         </ul>
       </aside>
       <main
-        class="d-flex flex-column flex-md-row gap-4 border-md-end  p-4 w-50 mr-3 w-100"
+        class="d-flex flex-column flex-lg-row gap-2 gap-xl-4 p-lg-4  mr-3 mr-md-0 w-100"
       >
-        <div>
-          <div class="border w-100 w-md-50 p-2 rounded-3 search-container">
+        <div class="main__info border p-4 rounded-4 shadow shadow-md">
+          <div
+            class="border d-flex align-items-center gap-2 p-2 rounded-3 search-container"
+          >
             <i class="fa-solid fa-magnifying-glass"></i>
             <input
               type="text"
@@ -147,7 +151,7 @@
           </div>
           <div class="d-flex justify-content-between align-items-center">
             <div class="mt-3">
-              <h3 class="fw-bold">کاربر عزیز</h3>
+              <h3 class="fw-bold">علی عزیز</h3>
               <h4 class="fs-5">خوش آمدید</h4>
             </div>
             <div
@@ -158,24 +162,31 @@
             </div>
           </div>
           <div
-            class="first__section d-flex justify-content-between px-3 py-2 rounded-4 mt-2"
+            class="first__section d-lg-flex justify-content-around px-3 py-2 rounded-4 mt-2 gap-2"
           >
-            <div class="d-flex flex-column align-items-start gap-2">
-              <i class="fa-solid fa-eye icon__gray p-2 rounded-4"></i>
-              <span class="text__gray">نمایش ها</span>
-              <span class="display-5 fw-bold">500</span>
+            <div class="d-flex flex-column align-items-center gap-2 p-2">
+              <div class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-eye icon__gray p-2 rounded-4"></i>
+
+                <span class="text__gray">نمایش ها</span>
+              </div>
+              <span class="display-6 fw-bold">500</span>
               <span class="text__gray">در روز</span>
             </div>
-            <div class="d-flex flex-column align-items-start gap-2">
-              <i class="fa-solid fa-compass icon__gray p-2 rounded-4"></i>
-              <span class="text__gray"> بازدیدها</span>
-              <span class="display-5 fw-bold">2000</span>
+            <div class="d-flex flex-column align-items-center gap-2 p-2">
+              <div class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-compass icon__gray p-2 rounded-4"></i>
+                <span class="text__gray"> بازدیدها</span>
+              </div>
+              <span class="display-6 fw-bold">2000</span>
               <span class="text__gray">در دقیقه</span>
             </div>
-            <div class="d-flex flex-column align-items-start gap-2">
+            <div class="d-flex flex-column align-items-center gap-2 p-2">
+              <div class="d-flex align-items-center gap-2">
               <i class="fa-solid fa-shop icon__gray p-2 rounded-4"></i>
               <span class="text__gray"> سفارش ها</span>
-              <span class="display-5 fw-bold">5100</span>
+            </div>
+              <span class="display-6 fw-bold">5100</span>
               <span class="text__gray">در روز</span>
             </div>
           </div>
@@ -185,124 +196,150 @@
             <div
               class="w-250 col-sm-12 col-md-6 d-flex justify-content-around align-items-center gap-2 p-2 rounded-4 orange__bg"
             >
-              <div class="d-flex flex-column w-50">
+              <div class="d-flex flex-column w-50 gap-2">
                 <span class="fw-bold fs-5">فروش ها</span>
-                <span>مجموع فروش امروز</span>
+                <span class="font-size-14">مجموع فروش امروز</span>
                 <span class="fw-bold fs-5">$500</span>
               </div>
+
               <div
-                class="circle__percentage bg-info d-flex justify-content-center align-items-center rounded-circle fw-bold fs-5"
+                id="progress"
+                class="progress-container position-relative d-flex justify-content-center align-items-center"
               >
-                55%
+                <span class="position-absolute">30%</span>
               </div>
             </div>
             <div
               class="w-250 col-12 col-md-6 d-flex justify-content-around align-items-center gap-2 p-2 rounded-4 blue__bg"
             >
-              <div class="d-flex flex-column w-50">
+              <div class="d-flex flex-column w-50 gap-2">
                 <span class="fw-bold fs-5"> سود</span>
-                <span> میزان روزانه</span>
+                <span class="font-size-14"> میزان روزانه</span>
                 <span class="fw-bold fs-5">$500</span>
               </div>
               <div
-                class="circle__percentage bg-info d-flex justify-content-center align-items-center rounded-circle fw-bold fs-5"
+                id="progress-2"
+                class="progress-container position-relative d-flex justify-content-center align-items-center"
               >
-                75%
+                <span class="position-absolute">55%</span>
               </div>
             </div>
             <div
               class="w-250 col-12 col-md-6 d-flex justify-content-around align-items-center gap-2 p-2 rounded-4 silver__bg"
             >
-              <div class="d-flex flex-column w-50">
+              <div class="d-flex flex-column w-50 gap-2">
                 <span class="fw-bold fs-5"> سفارشات</span>
-                <span>مجموع فروش امروز</span>
+                <span class="font-size-14">مجموع فروش امروز</span>
                 <span class="fw-bold fs-5">$500</span>
               </div>
+    
               <div
-                class="circle__percentage bg-info d-flex justify-content-center align-items-center rounded-circle fw-bold fs-5"
+                id="progress-3"
+                class="progress-container position-relative d-flex justify-content-center align-items-center"
               >
-                80%
+                <span class="position-absolute">70%</span>
               </div>
             </div>
             <div
               class="w-250 col-12 col-md-6 d-flex justify-content-around align-items-center gap-2 p-2 rounded-4 green__bg"
             >
-              <div class="d-flex flex-column w-50">
+              <div class="d-flex flex-column w-50 gap-2">
                 <span class="fw-bold fs-5"> بازدیدها</span>
-                <span>مجموع فروش امروز</span>
+                <span class="font-size-14">مجموع فروش امروز</span>
                 <span class="fw-bold fs-5">$500</span>
               </div>
+             
               <div
-                class="circle__percentage bg-info d-flex justify-content-center align-items-center rounded-circle fw-bold fs-5"
+                id="progress-4"
+                class="progress-container position-relative d-flex justify-content-center align-items-center"
               >
-                90%
+                <span class="position-absolute">80%</span>
               </div>
             </div>
           </div>
         </div>
         <div
-          class="assets bg-dark d-flex flex-column gap-3 align-items-center p-3 w-250 rounded-4"
+          class="assets bg-dark d-flex flex-column gap-4 justify-content-between align-items-center pt-3  rounded-4 shadow shadow-md overflow-hidden"
         >
           <div>
-            <h4 class="text-light">میزان دارایی</h4>
+            <h4 class="text-light fs-6">میزان دارایی</h4>
           </div>
-          <div class="d-flex justify-content-center gap-4 align-items-center w-100">
+          <div
+            class="d-flex flex-lg-column justify-content-center gap-1 gap-lg-2 align-items-center w-100"
+          >
             <div
               class="bg-light p-2 w-h-30 d-flex justify-content-center align-items-center rounded-circle"
             >
-              <i class="fa-solid fa-percent"></i>
+              
+              <img src="./img/discount.png" alt="">
             </div>
-            <div class="text-light d-flex flex-column w--50">
+            <div class="text-light d-flex flex-column w--100 text-center">
               <span class="fw-bold">230k</span>
-              <span class="text__gray">فروش ها</span>
+              <span class="text__gray w-100">فروش ها</span>
             </div>
           </div>
-          <div class="d-flex justify-content-center gap-4 align-items-center w-100">
+          <div
+            class="d-flex flex-lg-column justify-content-center gap-1 gap-lg-2 align-items-center w-100"
+          >
             <div
               class="bg-light p-2 w-h-30 d-flex justify-content-center align-items-center rounded-circle"
             >
               <i class="fa-regular fa-user"></i>
             </div>
-            <div class="text-light d-flex flex-column w--50">
+            <div class="text-light d-flex flex-column w--100 text-center">
               <span class="fw-bold">8.5k</span>
-              <span class="text__gray">مشتریان</span>
+              <span class="text__gray w--100">مشتریان</span>
             </div>
           </div>
 
-          <div class="d-flex justify-content-center gap-4 align-items-center w-100">
+          <div
+            class="d-flex flex-lg-column justify-content-center gap-1 gap-lg-2 align-items-center w-100"
+          >
             <div
               class="bg-light p-2 w-h-30 d-flex justify-content-center align-items-center rounded-circle"
             >
-              <i class="fa-solid fa-briefcase"></i>
+              <!-- <i class="fa-solid fa-briefcase"></i> -->
+              <img src="./img/briefcase.png" alt="">
             </div>
-            <div class="text-light d-flex flex-column w--50">
+            <div class="text-light d-flex flex-column w--100 text-center">
               <span class="fw-bold">230k</span>
-              <span class="text__gray"> محصولات</span>
+              <span class="text__gray w--100"> محصولات</span>
             </div>
           </div>
 
-          <div class="d-flex justify-content-center gap-4 align-items-center w-100">
+          <div
+            class="d-flex flex-lg-column justify-content-center gap-1 gap-lg-2 align-items-center w-100"
+          >
             <div
               class="bg-light p-2 w-h-30 d-flex justify-content-center align-items-center rounded-circle"
             >
-              <i class="fa-brands fa-paypal"></i>
+              <!-- <i class="fa-brands fa-paypal"></i> -->
+              <img src="./img/wallet.png" alt="">
             </div>
-            <div class="text-light d-flex flex-column w--50">
+            <div class="text-light d-flex flex-column w--100 text-center">
               <span class="fw-bold">9700k</span>
-              <span class="text__gray"> دارایی</span>
+              <span class="text__gray w--100"> دارایی</span>
             </div>
           </div>
-          
+
+          <div class="text-light mt-5 w-100">
+            <h4 class="text-center mb-4">آمار</h4>
+            <div class="w-100">
+              <img src="./img/statistic.png" alt="" class="statistic__image" />
+            </div>
+          </div>
         </div>
       </main>
       <!-- <img src="./img/userpanel-3.png" alt=""> -->
     </div>
+
     <div id="dark"></div>
     <script
       src="https://code.jquery.com/jquery-3.7.0.min.js"
       integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
       crossorigin="anonymous"
     ></script>
+    <script src="./progress.js"></script>
     <script>
       $(document).ready(function () {
         $(".menu-icon").click(function () {
