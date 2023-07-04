@@ -21,12 +21,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- <link rel="stylesheet" href="./styles/style.css" /> -->
+    <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/progressbar.js@1.1.0/dist/progressbar.js"></script>
     <title>userPanel</title>
   </head>
-  <body>
+  <body class="bg-lightGray-color">
     <div
       class="bg-white d-flex flex-column flex-lg-row gap-2 container mt-3 mt-lg-5 w-100 rounded-4"
     >
@@ -37,50 +38,57 @@
           class="d-lg-none container header-top d-flex align-items-center justify-content-between p-3"
         >
           <div class="menu-icon">
-            <div class="line_one"></div>
-            <div class="line_two"></div>
-            <div class="line_three"></div>
+            <div class="line_one bg-black-color"></div>
+            <div class="line_two bg-black-color"></div>
+            <div class="line_three bg-black-color"></div>
           </div>
-          <div id="navigator">
+          <div id="navigator" class="bg-primary">
             <ul id="nav" class="d-flex flex-column">
               <li id="nav_tab">
                 <a href="">
                   <div class="d-flex align-items-center gap-3 me-5">
-                    <i class="fa-solid fa-house"></i>
-                    <!-- <img  src="./img/home.png"  alt=""> -->
-                    <span class="fw-bold">خانه</span>
+                    <img src="./img/home.png" alt="" />
+                    <span class="fw-bold">پیشخوان</span>
                   </div>
                 </a>
               </li>
               <li id="nav_tab">
                 <a href="">
                   <div class="d-flex align-items-center gap-3 me-5">
-                    <i class="fa-solid fa-trophy"></i>
-                    <span class="fw-bold">پروژه ها</span>
+                    <i class="fa-regular fa-user"></i>
+                    <span class="fw-bold"> حساب کاربری</span>
                   </div>
                 </a>
               </li>
               <li id="nav_tab">
                 <a href="">
                   <div class="d-flex align-items-center gap-3 me-5">
-                    <i class="fa-solid fa-wallet"></i>
-                    <span class="fw-bold"> صورتحساب</span>
+                    <img src="./img/clipboard.png" alt="" />
+                    <span class="fw-bold"> سفارش ها</span>
                   </div>
                 </a>
               </li>
               <li id="nav_tab">
                 <a href="">
                   <div class="d-flex align-items-center gap-3 me-5">
-                    <i class="fa-solid fa-chart-column"></i>
-                    <span class="fw-bold"> آمار</span>
+                    <img src="./img/wallet.png" alt="" />
+                    <span class="fw-bold"> تخفیفات</span>
                   </div>
                 </a>
               </li>
               <li id="nav_tab">
                 <a href="">
                   <div class="d-flex align-items-center gap-3 me-5">
-                    <i class="fa-solid fa-gear"></i>
-                    <span class="fw-bold"> تنظیمات</span>
+                    <img src="./img/customer-support.png" alt="" />
+                    <span class="fw-bold"> پشتیبانی</span>
+                  </div>
+                </a>
+              </li>
+              <li id="nav_tab">
+                <a href="">
+                  <div class="d-flex align-items-center gap-3 me-5">
+                    <img src="./img/power-button.png" alt="" />
+                    <span class="fw-bold"> خروج </span>
                   </div>
                 </a>
               </li>
@@ -95,7 +103,7 @@
         <ul class="mt-2 p-2 d-none d-lg-flex flex-lg-column gap-4">
           <li>
             <a href="">
-              <div class="d-flex align-items-center gap-2 border-bottom  p-1">
+              <div class="d-flex align-items-center gap-2 border-bottom p-1">
                 <img src="./img/home.png" alt="" />
                 <span class="fw-bold">پیشخوان</span>
               </div>
@@ -103,7 +111,7 @@
           </li>
           <li>
             <a href="">
-              <div class="d-flex align-items-center gap-2 border-bottom  p-1">
+              <div class="d-flex align-items-center gap-2 border-bottom p-1">
                 <i class="fa-regular fa-user"></i>
                 <span class="fw-bold"> حساب کاربری</span>
               </div>
@@ -111,15 +119,15 @@
           </li>
           <li>
             <a href="">
-              <div class="d-flex align-items-center gap-2 border-bottom  p-1">
+              <div class="d-flex align-items-center gap-2 border-bottom p-1">
                 <img src="./img/clipboard.png" alt="" />
-                <span class="fw-bold">   سفارش ها</span>
+                <span class="fw-bold"> سفارش ها</span>
               </div>
             </a>
           </li>
           <li>
             <a href="">
-              <div class="d-flex align-items-center gap-2 border-bottom  p-1">
+              <div class="d-flex align-items-center gap-2 border-bottom p-1">
                 <img src="./img/wallet.png" alt="" />
                 <span class="fw-bold"> تخفیفات</span>
               </div>
@@ -127,17 +135,17 @@
           </li>
           <li>
             <a href="">
-              <div class="d-flex align-items-center gap-2 border-bottom  p-1">
+              <div class="d-flex align-items-center gap-2 border-bottom p-1">
                 <img src="./img/customer-support.png" alt="" />
-                <span class="fw-bold">  پشتیبانی</span>
+                <span class="fw-bold"> پشتیبانی</span>
               </div>
             </a>
           </li>
           <li>
             <a href="">
-              <div class="d-flex align-items-center gap-2 border-bottom  p-1">
+              <div class="d-flex align-items-center gap-2 border-bottom p-1">
                 <img src="./img/power-button.png" alt="" />
-                <span class="fw-bold"> خروج   </span>
+                <span class="fw-bold"> خروج </span>
               </div>
             </a>
           </li>
@@ -170,39 +178,45 @@
             </div>
           </div>
           <div
-            class="first__section d-lg-flex justify-content-around px-3 py-2 rounded-4 mt-2 gap-2"
+            class="first__section bg-snowWhite-color d-lg-flex justify-content-around px-3 py-2 rounded-4 mt-2 gap-2"
           >
             <div class="d-flex flex-column align-items-center gap-2 p-2">
               <div class="d-flex align-items-center gap-2">
-                <i class="fa-solid fa-eye icon__gray p-2 rounded-4"></i>
+                <i
+                  class="fa-solid fa-eye bg-mediumGray-color p-2 rounded-4"
+                ></i>
 
-                <span class="text__gray"> دیدگاه ها</span>
+                <span class="text-darkGray-color"> دیدگاه ها</span>
               </div>
               <span class="fs-4 fw-bold">500</span>
-              <span class="text__gray">یک ماه اخیر </span>
+              <span class="text-darkGray-color">یک ماه اخیر </span>
             </div>
             <div class="d-flex flex-column align-items-center gap-2 p-2">
               <div class="d-flex align-items-center gap-2">
-                <i class="fa-solid fa-compass icon__gray p-2 rounded-4"></i>
-                <span class="text__gray"> تیکت ها</span>
+                <i
+                  class="fa-solid fa-compass bg-mediumGray-color p-2 rounded-4"
+                ></i>
+                <span class="text-darkGray-color"> تیکت ها</span>
               </div>
               <span class="fs-4 fw-bold">2000</span>
-              <span class="text__gray">یک ماه اخیر</span>
+              <span class="text-darkGray-color">یک ماه اخیر</span>
             </div>
             <div class="d-flex flex-column align-items-center gap-2 p-2">
               <div class="d-flex align-items-center gap-2">
-                <i class="fa-solid fa-shop icon__gray p-2 rounded-4"></i>
-                <span class="text__gray"> سفارش ها</span>
+                <i
+                  class="fa-solid fa-shop bg-mediumGray-color p-2 rounded-4"
+                ></i>
+                <span class="text-darkGray-color"> سفارش ها</span>
               </div>
               <span class="fs-4 fw-bold">5100</span>
-              <span class="text__gray"> یک ماه اخیر</span>
+              <span class="text-darkGray-color"> یک ماه اخیر</span>
             </div>
           </div>
           <div
             class="row p-3 justify-content-between align-items-center gy-3 mt-3"
           >
             <div
-              class="w-250 col-sm-12 col-md-6 d-flex justify-content-around align-items-center gap-2 p-2 rounded-4 orange__bg"
+              class="w-250 col-sm-12 col-md-6 d-flex justify-content-around align-items-center gap-2 p-2 rounded-4 card__size bg-lightOrange-color"
             >
               <div class="d-flex flex-column w-50 gap-2">
                 <span class="fw-bold fs-5"> مجموع دارایی </span>
@@ -218,11 +232,11 @@
               </div>
             </div>
             <div
-              class="w-250 col-12 col-md-6 d-flex justify-content-around align-items-center gap-2 p-2 rounded-4 blue__bg"
+              class="w-250 col-12 col-md-6 d-flex justify-content-around align-items-center gap-2 p-2 rounded-4 card__size bg-lightBlue-color"
             >
               <div class="d-flex flex-column w-50 gap-2">
                 <span class="fw-bold fs-5"> مجموع بدهی </span>
-                <span class="font-size-14"> میزان روزانه</span>
+                <span class="font-size-14">  3 ماه اخیر</span>
                 <span class="fw-bold font-size-14 w--200">500,0000 تومان</span>
               </div>
               <div
@@ -233,7 +247,7 @@
               </div>
             </div>
             <div
-              class="w-250 col-12 col-md-6 d-flex justify-content-around align-items-center gap-2 p-2 rounded-4 silver__bg"
+              class="w-250 col-12 col-md-6 d-flex justify-content-around align-items-center gap-2 p-2 rounded-4 card__size bg-lightSilver-color"
             >
               <div class="d-flex flex-column w-50 gap-2">
                 <span class="fw-bold fs-5"> فاکتورها</span>
@@ -249,7 +263,7 @@
               </div>
             </div>
             <div
-              class="w-250 col-12 col-md-6 d-flex justify-content-around align-items-center gap-2 p-2 rounded-4 green__bg"
+              class="w-250 col-12 col-md-6 d-flex justify-content-around align-items-center gap-2 p-2 rounded-4 card__size bg-lightGreen-color"
             >
               <div class="d-flex flex-column w-50 gap-2">
                 <span class="fw-bold fs-6 w--200"> تیکت های خوانده نشده</span>
@@ -267,7 +281,7 @@
           </div>
         </div>
         <div
-          class="assets bg-dark d-flex flex-column gap-4 justify-content-between align-items-center pt-3 rounded-4 shadow shadow-md overflow-hidden"
+          class="assets bg-dark d-flex flex-column gap-4 justify-content-between align-items-center pt-3 rounded-3 shadow shadow-md"
         >
           <!-- <div>
             <h4 class="text-light fs-6">میزان دارایی</h4>
@@ -278,10 +292,12 @@
             <div
               class="bg-light p-2 w-h-30 d-flex justify-content-center align-items-center rounded-circle"
             >
-            <i class="fa-regular fa-user"></i>
+              <i class="fa-regular fa-user"></i>
             </div>
             <div class="text-light d-flex flex-column w--100 text-center">
-              <span class="text__gray w--100"> تخفیفات استفاده شده  </span>
+              <span class="text-darkGray-color w--100">
+                تخفیفات استفاده شده
+              </span>
               <span class="fw-bold">2,000,000 تومان</span>
             </div>
           </div>
@@ -291,10 +307,10 @@
             <div
               class="bg-light p-2 w-h-30 d-flex justify-content-center align-items-center rounded-circle"
             >
-             <img src="./img/clock.png" alt="">
+              <img src="./img/clock.png" alt="" />
             </div>
             <div class="text-light d-flex flex-column w--100 text-center">
-              <span class="text__gray w--100"> سفارشات  </span>
+              <span class="text-darkGray-color w--100"> سفارشات </span>
               <span class="fw-bold">200</span>
             </div>
           </div>
@@ -309,7 +325,7 @@
               <img src="./img/ringing.png" alt="" />
             </div>
             <div class="text-light d-flex flex-column w--100 text-center">
-              <span class="text__gray w--100">    کامنت ها</span>
+              <span class="text-darkGray-color w--100"> کامنت ها</span>
               <span class="fw-bold">230k</span>
             </div>
           </div>
@@ -320,27 +336,24 @@
             <div
               class="bg-light p-2 w-h-30 d-flex justify-content-center align-items-center rounded-circle"
             >
-              <!-- <i class="fa-brands fa-paypal"></i> -->
               <img src="./img/wallet.png" alt="" />
             </div>
             <div class="text-light d-flex flex-column w--100 text-center">
-              <span class="text__gray w--100"> کیف پول</span>
+              <span class="text-darkGray-color w--100"> کیف پول</span>
               <span class="fw-bold">100,000 تومان</span>
             </div>
           </div>
 
           <div class="text-light mt-5 w-100">
-            
             <div class="w-100">
-              <img src="./img/laptop.avif" alt="" class="statistic__image" />
+              <img src="./img/laptop.avif" alt="" class="statistic__image rounded-bottom" />
             </div>
           </div>
         </div>
       </main>
-      <!-- <img src="./img/userpanel-3.png" alt=""> -->
     </div>
 
-    <div id="dark"></div>
+    <div id="dark" class="bg-dark-color"></div>
     <script
       src="https://code.jquery.com/jquery-3.7.0.min.js"
       integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
