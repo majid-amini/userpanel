@@ -12578,4 +12578,7 @@ p {
   .assets {
     max-width: 270px !important;
   }
+  .full-height {
+    height: 100vh;
+  }
 }/*# sourceMappingURL=main.css.map */

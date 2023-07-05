@@ -32,6 +32,7 @@ p {
   font-family: "iranyekan";
 }
 
+
 #navigator {
   width: 270px;
   height: 100%;
@@ -168,6 +169,9 @@ p {
   }
   .assets {
     max-width: 270px !important;
+  }
+  .full-height {
+    height: 100vh;
   }
 }
 
