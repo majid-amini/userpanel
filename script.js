@@ -4,7 +4,7 @@ $(document).ready(function () {
       $("#navigator").animate({ right: "0px" }, 350);
       // $(".menu-icon").animate({ right: "200px !important" }, 350);
       $("#dark").css("display", "block");
-
+      $(".menu-icon div").addClass("bg-white");
       var scrollPosition = [
         self.pageXOffset ||
           document.documentElement.scrollLeft ||
@@ -22,7 +22,7 @@ $(document).ready(function () {
       $("#navigator").animate({ right: "-270px" }, 350);
       $(this).animate({ right: "0px" }, 350);
       $("#dark").css("display", "none");
-
+      $(".menu-icon div").removeClass("bg-white");
       var html = jQuery("html");
       var scrollPosition = html.data("scroll-position");
       html.css("overflow", html.data("previous-overflow"));

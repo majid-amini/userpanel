@@ -111,7 +111,9 @@ body {
   height: 80px;
   object-fit: cover;
 }
-
+.card__size {
+  width: 48% !important;
+}
 .search-container input::placeholder {
   color: var(--darkGray-color);
 }

@@ -113,8 +113,8 @@ p {
 .w--50 {
   width: 50px;
 }
-.w-250 {
-  width: 250px;
+.w-240 {
+  width: 240px;
 }
 .w-h-30 {
   width: 30px;
@@ -134,10 +134,16 @@ p {
   height: 50px;
 }
 
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
 .statistic__image {
   object-fit: contain;
   width: 100%;
 }
+
+
 @media (min-width: 300px) and (max-width: 768px) {
   .card__size,
   .assets {
@@ -155,16 +161,14 @@ p {
     width: 500px;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
-  .img__container {
-    text-align: left !important;
-  }
-}
+
 @media (min-width: 1024px) {
   .aside {
     width: 250px !important;
   }
   .assets {
-    width: 220px !important;
+    max-width: 270px !important;
   }
 }
+
+
