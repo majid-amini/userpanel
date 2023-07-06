@@ -60,7 +60,13 @@ $(document).ready(function () {
   $(".fa-circle-xmark").click(function () {
     $(".mail__modal").addClass("d-none");
   });
-  
+
+  $(".password__icon").click(function(){
+    $(".password__modal").removeClass("d-none")
+  })
+  $(".fa-circle-xmark").click(function () {
+    $(".password__modal").addClass("d-none");
+  });
 });
 
 $(window).scroll(function () {

@@ -170,6 +170,7 @@
         class="d-flex flex-column flex-lg-row gap-2 gap-xl-4 p-lg-4 mr-3 mr-md-0 w-100"
       >
         <div class="edit__profile w-100 border rounded-4 shadow shadow-md">
+          <h4 class="px-4 py-2">ویرایش حساب کاربری</h4>
           <div>
             <nav aria-label="breadcrumb">
               <ul class="breadcrumb">
@@ -181,7 +182,7 @@
               </ul>
             </nav>
           </div>
-          <h4 class="px-4 py-2">ویرایش حساب کاربری</h4>
+          
           <div class="row">
             <div
               class="col-6 p-4 d-flex p-2 justify-content-between align-items-center border-start border-bottom"
@@ -212,7 +213,7 @@
                   باید با اطلاعاتی که وارد می‌کنید همخوانی داشته باشند.</span
                 >
               </div>
-              <form action="" class="p-2">
+              <form action="" class="modal__form p-2">
                 <div class="d-flex gap-2">
                   <div class="d-flex flex-column gap-2">
                     <label for="">نام</label>
@@ -243,7 +244,7 @@
                     value="11111111"
                   />
                 </div>
-                <div class="text-start mt-2">
+                <div class="text-start mt-3">
                   <input
                     class="p-2 bg-primary text-white border rounded-3"
                     type="submit"
@@ -358,7 +359,49 @@
                 />
               </div>
               <div>
-                <i class="edit__icon fa-regular fa-pen-to-square"></i>
+                <i class="password__icon edit__icon fa-regular fa-pen-to-square"></i>
+              </div>
+            </div>
+            <div
+              class="password__modal position-absolute top-50 start-50 translate-middle bg-lightBlue-color w-25 rounded-4 d-none"
+            >
+              <div
+                class="d-flex justify-content-between align-items-center p-2 border-bottom"
+              >
+                <h5 class="fs-6 p-2">تغییر رمز عبور</h5>
+                <i class="fa-regular fa-circle-xmark edit__icon"></i>
+              </div>
+              <form action="" class="p-2">
+                <div class="d-flex flex-column gap-2">
+                  <label for="">رمز عبور فعلی</label>
+                  <input class="px-2 py-1 border rounded-3" type="password" />
+                  <span class="text-primary">بازیابی رمز عبور</span>
+                  <span class="font-size-14"
+                    >رمز عبور شما باید حداقل 8 حرف باشد</span
+                  >
+                </div>
+                <div class="d-flex flex-column gap-2 mt-3">
+                  <label for="">رمز عبور جدید</label>
+                  <input class="px-2 py-1 border rounded-3" type="password" />
+                </div>
+                <div class="p-2">
+                  <ul class="p-2 font-size-14">
+                    <li>شامل عدد</li>
+                    <li>حداقل 8 حرف</li>
+                    <li>شامل علامت (!@#$%&*^)</li>
+                    <li>شامل یک حرف بزرگ و کوچک</li>
+                  </ul>
+                </div>
+                <div class="d-flex flex-column gap-2 mt-3">
+                  <label for=""> تکرار رمز عبور جدید </label>
+                  <input class="px-2 py-1 border rounded-3" type="password" />
+                </div>
+              </form>
+
+              <div class="text-start mt-2 py-3">
+                <button class="p-2 border-0 bg-primary text-white rounded-3">
+                  تغییر رمز عبور
+                </button>
               </div>
             </div>
             <div

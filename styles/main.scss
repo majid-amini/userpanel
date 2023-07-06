@@ -155,6 +155,12 @@ p {
 .edit__icon {
   cursor: pointer;
 }
+.modal__form input:focus {
+  outline: none;
+}
+.password__modal form ul {
+  list-style-type: circle;
+}
 
 @media (min-width: 300px) and (max-width: 768px) {
   .card__size,
