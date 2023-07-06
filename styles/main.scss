@@ -2,6 +2,7 @@ $theme-colors: (
   "primary": #00aeff,
   "secondary": purple,
   "lightGray-color": #eee,
+  "white-color": #fff,
   "darkGray-color": #ccc,
   "black-color": #000,
   "dark-color": rgba(0, 0, 0, 0.8),
@@ -31,7 +32,6 @@ div,
 p {
   font-family: "iranyekan";
 }
-
 
 #navigator {
   width: 270px;
@@ -136,14 +136,24 @@ p {
 }
 
 .row {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 .statistic__image {
   object-fit: contain;
   width: 100%;
 }
+.breadcrumb {
+  direction: rtl;
+}
 
+.breadcrumb-item::before {
+  content: "<";
+  margin: 0 5px;
+}
+.edit__icon {
+  cursor: pointer;
+}
 
 @media (min-width: 300px) and (max-width: 768px) {
   .card__size,
@@ -174,5 +184,3 @@ p {
     height: 100vh;
   }
 }
-
-
