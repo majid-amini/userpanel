@@ -33,6 +33,34 @@ $(document).ready(function () {
   $(".menu-icon").click(function () {
     $(this).toggleClass("on");
   });
+
+  $(".name__edit__icon").click(function () {
+    $(".modal__name").removeClass("d-none");
+    // $("#dark").css("display", "block");
+  });
+  $(".fa-circle-xmark").click(function () {
+    $(".modal__name").addClass("d-none");
+  });
+
+  $(".nationalCode__edit__icon").click(function(){
+    $(".modal__name").removeClass("d-none");
+  })
+
+
+  $(".mobile__edit__icon").click(function(){
+    $(".mobile__modal").removeClass("d-none")
+  })
+  $(".fa-circle-xmark").click(function () {
+    $(".mobile__modal").addClass("d-none");
+  });
+  
+  $(".mail__edit__icon").click(function(){
+    $(".mail__modal").removeClass("d-none")
+  })
+  $(".fa-circle-xmark").click(function () {
+    $(".mail__modal").addClass("d-none");
+  });
+  
 });
 
 $(window).scroll(function () {

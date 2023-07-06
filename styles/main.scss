@@ -5,7 +5,7 @@ $theme-colors: (
   "white-color": #fff,
   "darkGray-color": #ccc,
   "black-color": #000,
-  "dark-color": rgba(0, 0, 0, 0.8),
+  "dark-color": rgba(0, 0, 0, 0.5),
   "snowWhite-color": #faf8f4,
   "mediumGray-color": #e2dfd3,
   "lightOrange-color": #ffefe2,
@@ -99,6 +99,7 @@ p {
   z-index: 5;
   display: none;
 }
+
 .img__container img {
   width: 80px;
   height: 80px;
