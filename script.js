@@ -30,42 +30,70 @@ $(document).ready(function () {
     }
   });
 
+  // if ($("#modal__dark").attr(style) === 'display: block;') {
+  //   console.log("yes");
+  // }
+  console.log($("#modal__dark").attr);
+
   $(".menu-icon").click(function () {
     $(this).toggleClass("on");
   });
 
   $(".name__edit__icon").click(function () {
     $(".modal__name").removeClass("d-none");
-    // $("#dark").css("display", "block");
+    $("#modal__dark").css("display", "block");
   });
   $(".fa-circle-xmark").click(function () {
     $(".modal__name").addClass("d-none");
+    $("#modal__dark").css("display", "none");
   });
 
-  $(".nationalCode__edit__icon").click(function(){
+  $(".nationalCode__edit__icon").click(function () {
     $(".modal__name").removeClass("d-none");
-  })
+    $("#modal__dark").css("display", "block");
+  });
 
-
-  $(".mobile__edit__icon").click(function(){
-    $(".mobile__modal").removeClass("d-none")
-  })
+  $(".mobile__edit__icon").click(function () {
+    $(".mobile__modal").removeClass("d-none");
+    $("#modal__dark").css("display", "block");
+  });
   $(".fa-circle-xmark").click(function () {
     $(".mobile__modal").addClass("d-none");
-  });
-  
-  $(".mail__edit__icon").click(function(){
-    $(".mail__modal").removeClass("d-none")
-  })
-  $(".fa-circle-xmark").click(function () {
-    $(".mail__modal").addClass("d-none");
+    $("#modal__dark").css("display", "none");
   });
 
-  $(".password__icon").click(function(){
-    $(".password__modal").removeClass("d-none")
-  })
+  $(".mail__edit__icon").click(function () {
+    $(".mail__modal").removeClass("d-none");
+    $("#modal__dark").css("display", "block");
+  });
+  $(".fa-circle-xmark").click(function () {
+    $(".mail__modal").addClass("d-none");
+    $("#modal__dark").css("display", "none");
+  });
+
+  $(".password__icon").click(function () {
+    $(".password__modal").removeClass("d-none");
+    $("#modal__dark").css("display", "block");
+  });
   $(".fa-circle-xmark").click(function () {
     $(".password__modal").addClass("d-none");
+    $("#modal__dark").css("display", "none");
+  });
+  $(".birth__date__icon").click(function () {
+    $(".birth__date__modal").removeClass("d-none");
+    $("#modal__dark").css("display", "block");
+  });
+  $(".fa-circle-xmark").click(function () {
+    $(".birth__date__modal").addClass("d-none");
+    $("#modal__dark").css("display", "none");
+  });
+  $(".job__icon").click(function () {
+    $(".job__modal").removeClass("d-none");
+    $("#modal__dark").css("display", "block");
+  });
+  $(".fa-circle-xmark").click(function () {
+    $(".job__modal").addClass("d-none");
+    $("#modal__dark").css("display", "none");
   });
 });
 

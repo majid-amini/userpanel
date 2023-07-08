@@ -171,8 +171,8 @@
       >
         <div class="edit__profile w-100 border rounded-4 shadow shadow-md">
           <h4 class="px-4 py-2">ویرایش حساب کاربری</h4>
-          <div>
-            <nav aria-label="breadcrumb">
+          <div class="px-4">
+            <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
               <ul class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">صفحه اصلی</a></li>
                 <li class="breadcrumb-item"><a href="#">صفحه دوم</a></li>
@@ -182,10 +182,10 @@
               </ul>
             </nav>
           </div>
-          
+
           <div class="row">
             <div
-              class="col-6 p-4 d-flex p-2 justify-content-between align-items-center border-start border-bottom"
+              class="col-12 col-xl-6 p-4 d-flex p-2 justify-content-between align-items-center border-start border-bottom"
             >
               <div>
                 <h6>نام و نام خانوادگی</h6>
@@ -198,7 +198,7 @@
               </div>
             </div>
             <div
-              class="modal__name position-absolute end-0 start-0 mx-auto w-25 py-4 bg-lightBlue-color rounded-4 d-none"
+              class="modal__name position-absolute top-50 start-50 translate-middle w-75 py-4 bg-white-color rounded-4 d-none"
               style="z-index: 200"
             >
               <div
@@ -207,14 +207,14 @@
                 <h4>ثبت اطلاعات شناسایی</h4>
                 <i class="fa-regular fa-circle-xmark edit__icon"></i>
               </div>
-              <div class="p-2">
+              <div class="p-2 mt-3 font-size-14">
                 <span
                   >لطفا اطلاعات شناسایی خود را وارد کنید. نام و نام خانوادگی شما
                   باید با اطلاعاتی که وارد می‌کنید همخوانی داشته باشند.</span
                 >
               </div>
               <form action="" class="modal__form p-2">
-                <div class="d-flex gap-2">
+                <div class="d-flex flex-column flex-lg-row gap-2">
                   <div class="d-flex flex-column gap-2">
                     <label for="">نام</label>
                     <input
@@ -254,7 +254,7 @@
               </form>
             </div>
             <div
-              class="col-6 p-4 d-flex justify-content-between align-items-center border-bottom"
+              class="col-12 col-xl-6 p-4 d-flex justify-content-between align-items-center border-bottom"
             >
               <div>
                 <h6>کد ملی</h6>
@@ -267,7 +267,7 @@
               </div>
             </div>
             <div
-              class="col-6 p-4 d-flex justify-content-between align-items-center border-start border-bottom"
+              class="col-12 col-xl-6 d-flex justify-content-between align-items-center border-md-start border-bottom p-4"
             >
               <div>
                 <h6>شماره موبایل</h6>
@@ -280,35 +280,38 @@
               </div>
             </div>
             <div
-              class="mobile__modal position-absolute start-0 end-0 mx-auto bg-lightBlue-color w-25 rounded-4 d-none"
+              class="mobile__modal position-absolute top-50 start-50 translate-middle bg-white-color w-75 rounded-4 d-none"
             >
               <div
-                class="d-flex justify-content-between align-items-center p-2 border-bottom"
+                class="d-flex justify-content-between align-items-center p-2 border-bottom mt-2 p-3"
               >
                 <h5 class="fs-6">ویرایش شماره موبایل</h5>
                 <i class="fa-regular fa-circle-xmark edit__icon"></i>
               </div>
-              <div class="p-2">
+              <div class="p-2 mt-2">
                 <input
-                  class="w-100 outline-0 border p-2"
+                  class="w-100 outline-0 border p-2 rounded-3"
                   type="text"
                   name=""
                   id=""
                   value="0912-1111111"
                 />
               </div>
-              <div class="d-flex align-items-center gap-2 mt-2">
+              <div class="d-flex align-items-center gap-2 mt-1">
                 <i class="fa-solid fa-circle-info"></i>
                 <span>برای ثبت این شماره باید آن را تایید کنید. </span>
               </div>
               <div class="text-start mt-2 py-3">
-                <button class="p-2 border-0 bg-primary text-white rounded-3">
+                <button
+                  type="submit"
+                  class="p-2 border-0 bg-primary text-white rounded-3"
+                >
                   دریافت کد تایید و تغییر شماره
                 </button>
               </div>
             </div>
             <div
-              class="col-6 p-4 d-flex justify-content-between align-items-center border-bottom"
+              class="col-12 col-xl-6 p-4 d-flex justify-content-between align-items-center border-bottom"
             >
               <div>
                 <h6>ایمیل</h6>
@@ -322,17 +325,17 @@
             </div>
 
             <div
-              class="mail__modal position-absolute start-0 end-0 mx-auto bg-lightBlue-color w-25 rounded-4 d-none"
+              class="mail__modal position-absolute top-50 start-50 translate-middle bg-white-color w-75 rounded-4 d-none"
             >
               <div
-                class="d-flex justify-content-between align-items-center p-2 border-bottom"
+                class="d-flex justify-content-between align-items-center p-3 border-bottom mt-2"
               >
                 <h5 class="fs-6">ویرایش پست الکترونیکی</h5>
                 <i class="fa-regular fa-circle-xmark edit__icon"></i>
               </div>
-              <div class="p-2">
+              <div class="p-2 mt-2">
                 <input
-                  class="w-100 outline-0 border p-2"
+                  class="w-100 outline-0 border p-2 rounded-3"
                   type="text"
                   name=""
                   id=""
@@ -341,13 +344,16 @@
               </div>
 
               <div class="text-start mt-2 py-3">
-                <button class="p-2 border-0 bg-primary text-white rounded-3">
+                <button
+                  type="submit"
+                  class="p-2 border-0 bg-primary text-white rounded-3"
+                >
                   ویرایش
                 </button>
               </div>
             </div>
             <div
-              class="col-6 p-4 d-flex justify-content-between align-items-center border-bottom border-start"
+              class="col-12 col-xl-6 p-4 d-flex justify-content-between align-items-center border-bottom border-md-start"
             >
               <div>
                 <h6>رمز عبور</h6>
@@ -359,14 +365,16 @@
                 />
               </div>
               <div>
-                <i class="password__icon edit__icon fa-regular fa-pen-to-square"></i>
+                <i
+                  class="password__icon edit__icon fa-regular fa-pen-to-square"
+                ></i>
               </div>
             </div>
             <div
-              class="password__modal position-absolute top-50 start-50 translate-middle bg-lightBlue-color w-25 rounded-4 d-none"
+              class="password__modal position-absolute top-50 start-50 translate-middle bg-white-color w-75 rounded-4 d-none"
             >
               <div
-                class="d-flex justify-content-between align-items-center p-2 border-bottom"
+                class="d-flex justify-content-between align-items-center p-2 border-bottom mt-2"
               >
                 <h5 class="fs-6 p-2">تغییر رمز عبور</h5>
                 <i class="fa-regular fa-circle-xmark edit__icon"></i>
@@ -375,7 +383,9 @@
                 <div class="d-flex flex-column gap-2">
                   <label for="">رمز عبور فعلی</label>
                   <input class="px-2 py-1 border rounded-3" type="password" />
-                  <span class="text-primary">بازیابی رمز عبور</span>
+                  <a href="#">
+                    <span class="text-primary">بازیابی رمز عبور</span>
+                  </a>
                   <span class="font-size-14"
                     >رمز عبور شما باید حداقل 8 حرف باشد</span
                   >
@@ -399,13 +409,16 @@
               </form>
 
               <div class="text-start mt-2 py-3">
-                <button class="p-2 border-0 bg-primary text-white rounded-3">
+                <button
+                  type="submit"
+                  class="p-2 border-0 bg-primary text-white rounded-3"
+                >
                   تغییر رمز عبور
                 </button>
               </div>
             </div>
             <div
-              class="col-6 p-4 d-flex justify-content-between align-items-center border-bottom"
+              class="col-12 col-xl-6 p-4 d-flex justify-content-between align-items-center border-bottom"
             >
               <div>
                 <h6>روش بازگرداندن پول من</h6>
@@ -415,39 +428,175 @@
               </div>
             </div>
             <div
-              class="col-6 p-4 d-flex justify-content-between align-items-center border-start"
+              class="col-12 col-lg-6 p-4 d-flex justify-content-between align-items-center border-md-start border-bottom border-md-bottom-0"
             >
               <div>
                 <h6>تاریخ تولد</h6>
               </div>
               <div>
-                <i class="edit__icon fa-solid fa-plus"></i>
+                <i class="birth__date__icon edit__icon fa-solid fa-plus"></i>
               </div>
             </div>
             <div
-              class="col-6 p-4 d-flex justify-content-between align-items-center"
+              class="birth__date__modal position-absolute top-50 start-50 translate-middle bg-white-color w-75 rounded-4 d-none"
+            >
+              <div
+                class="d-flex justify-content-between align-items-center p-2 border-bottom"
+              >
+                <h5 class="fs-6 p-2 mt-2">تاریخ تولد</h5>
+                <i class="fa-regular fa-circle-xmark edit__icon"></i>
+              </div>
+              <div class="p-2">
+                <div class="w-100 d-flex justify-content-center mt-2 gap-4">
+                  <div>
+                    <span>سال</span>
+                    <select
+                      name=""
+                      id=""
+                      class="form-control w-100 h-50 px-2 py-1 border rounded-3 mt-2"
+                    >
+                      <option value="">1300</option>
+                      <option value="">1301</option>
+                      <option value="">1302</option>
+                      <option value="">1303</option>
+                      <option value="">1304</option>
+                      <option value="">1305</option>
+                      <option value="">1306</option>
+                    </select>
+                  </div>
+                  <div>
+                    <span>ماه</span>
+                    <select
+                      name=""
+                      id=""
+                      class="form-control w-100 px-2 py-1 border rounded-3 mt-2"
+                    >
+                      <option value="">فروردین</option>
+                      <option value="">اردیبهشت</option>
+                      <option value="">خرداد</option>
+                      <option value="">تیر</option>
+                      <option value="">مرداد</option>
+                      <option value="">شهریور</option>
+                      <option value="">مهر</option>
+                      <option value="">آبان</option>
+                      <option value="">آذر</option>
+                      <option value="">دی</option>
+                      <option value="">بهمن</option>
+                      <option value="">اسفند</option>
+                    </select>
+                  </div>
+                  <div>
+                    <span>روز</span>
+                    <select
+                      name=""
+                      id=""
+                      class="form-control w-100 h-50 px-2 py-1 border rounded-3 mt-2"
+                    >
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                      <option value="">4</option>
+                      <option value="">5</option>
+                      <option value="">6</option>
+                      <option value="">7</option>
+                      <option value="">8</option>
+                      <option value="">9</option>
+                      <option value="">10</option>
+                      <option value="">11</option>
+                      <option value="">12</option>
+                      <option value="">13</option>
+                      <option value="">14</option>
+                      <option value="">15</option>
+                      <option value="">16</option>
+                      <option value="">17</option>
+                      <option value="">18</option>
+                      <option value="">19</option>
+                      <option value="">20</option>
+                      <option value="">21</option>
+                      <option value="">22</option>
+                      <option value="">23</option>
+                      <option value="">24</option>
+                      <option value="">25</option>
+                      <option value="">26</option>
+                      <option value="">27</option>
+                      <option value="">28</option>
+                      <option value="">29</option>
+                      <option value="">30</option>
+                      <option value="">31</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-start mt-2 py-3">
+                <button
+                  type="submit"
+                  class="p-2 border-0 bg-primary text-white rounded-3"
+                >
+                  ثبت تاریخ تولد
+                </button>
+              </div>
+            </div>
+            <div
+              class="col-12 col-xl-6 p-4 d-flex justify-content-between align-items-center"
             >
               <div>
                 <h6>شغل</h6>
               </div>
               <div>
-                <i class="edit__icon fa-solid fa-plus"></i>
+                <i class="job__icon edit__icon fa-solid fa-plus"></i>
+              </div>
+            </div>
+            <div
+              class="job__modal position-absolute top-50 start-50 translate-middle bg-white-color w-75 rounded-4 d-none"
+            >
+              <div
+                class="d-flex justify-content-between align-items-center p-2 border-bottom"
+              >
+                <h5 class="fs-6 mt-2 p-2">شغل خود را انتخاب کنید</h5>
+                <i class="fa-regular fa-circle-xmark edit__icon"></i>
+              </div>
+              <div class="p-2">
+                <div class="d-flex justify-content-around mt-2">
+                  <select
+                    name=""
+                    id=""
+                    class="form-control h-50 p-2 border rounded-3"
+                  >
+                    <option disabled selected>
+                      انتخاب از لیست حوزه های کاری
+                    </option>
+                    <option value="">برنامه نویس فرانت</option>
+                    <option value="">برنامه نویس بک اند</option>
+                    <option value="">دیتا آنالیست</option>
+                    <option value="">مدرس برنامه نویسی</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="text-start mt-2 py-3">
+                <button
+                  type="submit"
+                  class="p-2 border-0 bg-primary text-white rounded-3"
+                >
+                  ثبت اطلاعات
+                </button>
               </div>
             </div>
           </div>
         </div>
         <div
-          class="assets position-relative bg-dark d-flex flex-column justify-content-start p-2 gap-4 align-items-center rounded-4 shadow shadow-md w-100"
+          class="assets position-relative bg-dark-color d-flex flex-column justify-content-start p-2 gap-4 align-items-center rounded-4 shadow shadow-md w-100"
         >
           <div
             class="d-flex justify-content-center gap-3 gap-lg-2 align-items-center w-100 z-2"
           >
             <div
-              class="bg-light p-2 w-h-30 d-flex justify-content-center align-items-center rounded-circle"
+              class="bg-white-color p-2 w-h-30 d-flex justify-content-center align-items-center rounded-circle"
             >
               <i class="fa-regular fa-user"></i>
             </div>
-            <div class="text-light d-flex flex-column text-right w--100">
+            <div class="text-white-color d-flex flex-column text-right w--100">
               <span class="font-size-14 text-darkGray-color text-right">
                 تخفیفات استفاده شده
               </span>
@@ -460,11 +609,11 @@
             class="d-flex justify-content-center gap-3 gap-lg-2 align-items-center w-100 z-2"
           >
             <div
-              class="bg-light p-2 w-h-30 d-flex justify-content-center align-items-center rounded-circle"
+              class="bg-white-color p-2 w-h-30 d-flex justify-content-center align-items-center rounded-circle"
             >
               <img src="./img/clock.png" alt="" />
             </div>
-            <div class="text-light d-flex flex-column w--100 text-right">
+            <div class="text-white-color d-flex flex-column w--100 text-right">
               <span class="font-size-14 text-darkGray-color"> سفارشات </span>
               <span class="fw-bold">200</span>
             </div>
@@ -474,12 +623,12 @@
             class="d-flex justify-content-center gap-3 gap-lg-2 align-items-center w-100 z-2"
           >
             <div
-              class="bg-light p-2 w-h-30 d-flex justify-content-center align-items-center rounded-circle"
+              class="bg-white-color p-2 w-h-30 d-flex justify-content-center align-items-center rounded-circle"
             >
               <!-- <i class="fa-solid fa-briefcase"></i> -->
               <img src="./img/ringing.png" alt="" />
             </div>
-            <div class="text-light d-flex flex-column w--100 text-right">
+            <div class="text-white-color d-flex flex-column w--100 text-right">
               <span class="font-size-14 text-darkGray-color w--100">
                 کامنت ها</span
               >
@@ -491,17 +640,17 @@
             class="d-flex justify-content-center gap-3 gap-lg-2 align-items-center w-100 z-2"
           >
             <div
-              class="bg-light p-2 w-h-30 d-flex justify-content-center align-items-center rounded-circle"
+              class="bg-white-color p-2 w-h-30 d-flex justify-content-center align-items-center rounded-circle"
             >
               <img src="./img/wallet.png" alt="" />
             </div>
-            <div class="text-light d-flex flex-column w--100 text-right">
+            <div class="text-white-color d-flex flex-column w--100 text-right">
               <span class="text-darkGray-color w--100"> کیف پول</span>
               <span class="fw-bold">100,000 تومان</span>
             </div>
           </div>
 
-          <div class="text-light mt-5 w-100 h-50">
+          <div class="text-white-color mt-5 w-100 h-50">
             <div class="w-100 h-100"></div>
           </div>
         </div>
@@ -509,6 +658,7 @@
     </div>
 
     <div id="dark" class="bg-dark-color"></div>
+    <div id="modal__dark" class="bg-dark-color"></div>
     <script
       src="https://code.jquery.com/jquery-3.7.0.min.js"
       integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="

@@ -35,7 +35,7 @@
   --bs-white-color: #fff;
   --bs-darkGray-color: #ccc;
   --bs-black-color: #000;
-  --bs-dark-color: rgba(0, 0, 0, 0.5);
+  --bs-dark-color: rgb(33, 37, 41);
   --bs-snowWhite-color: #faf8f4;
   --bs-mediumGray-color: #e2dfd3;
   --bs-lightOrange-color: #ffefe2;
@@ -48,7 +48,7 @@
   --bs-white-color-rgb: 255, 255, 255;
   --bs-darkGray-color-rgb: 204, 204, 204;
   --bs-black-color-rgb: 0, 0, 0;
-  --bs-dark-color-rgb: 0, 0, 0;
+  --bs-dark-color-rgb: 33, 37, 41;
   --bs-snowWhite-color-rgb: 250, 248, 244;
   --bs-mediumGray-color-rgb: 226, 223, 211;
   --bs-lightOrange-color-rgb: 255, 239, 226;
@@ -3116,19 +3116,19 @@ textarea.form-control-lg {
 
 .btn-dark-color {
   --bs-btn-color: #fff;
-  --bs-btn-bg: rgba(0, 0, 0, 0.5);
-  --bs-btn-border-color: rgba(0, 0, 0, 0.5);
+  --bs-btn-bg: rgb(33, 37, 41);
+  --bs-btn-border-color: rgb(33, 37, 41);
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: rgba(0, 0, 0, 0.575);
-  --bs-btn-hover-border-color: rgba(0, 0, 0, 0.6);
-  --bs-btn-focus-shadow-rgb: 88, 88, 88;
+  --bs-btn-hover-bg: #1c1f23;
+  --bs-btn-hover-border-color: #1a1e21;
+  --bs-btn-focus-shadow-rgb: 66, 70, 73;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: rgba(0, 0, 0, 0.6);
-  --bs-btn-active-border-color: rgba(0, 0, 0, 0.625);
+  --bs-btn-active-bg: #1a1e21;
+  --bs-btn-active-border-color: #191c1f;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: rgba(0, 0, 0, 0.5);
-  --bs-btn-disabled-border-color: rgba(0, 0, 0, 0.5);
+  --bs-btn-disabled-bg: rgb(33, 37, 41);
+  --bs-btn-disabled-border-color: rgb(33, 37, 41);
 }
 
 .btn-snowWhite-color {
@@ -3336,19 +3336,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-dark-color {
-  --bs-btn-color: rgba(0, 0, 0, 0.5);
-  --bs-btn-border-color: rgba(0, 0, 0, 0.5);
+  --bs-btn-color: rgb(33, 37, 41);
+  --bs-btn-border-color: rgb(33, 37, 41);
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: rgba(0, 0, 0, 0.5);
-  --bs-btn-hover-border-color: rgba(0, 0, 0, 0.5);
-  --bs-btn-focus-shadow-rgb: 0, 0, 0;
+  --bs-btn-hover-bg: rgb(33, 37, 41);
+  --bs-btn-hover-border-color: rgb(33, 37, 41);
+  --bs-btn-focus-shadow-rgb: 33, 37, 41;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: rgba(0, 0, 0, 0.5);
-  --bs-btn-active-border-color: rgba(0, 0, 0, 0.5);
+  --bs-btn-active-bg: rgb(33, 37, 41);
+  --bs-btn-active-border-color: rgb(33, 37, 41);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: rgba(0, 0, 0, 0.5);
+  --bs-btn-disabled-color: rgb(33, 37, 41);
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: rgba(0, 0, 0, 0.5);
+  --bs-btn-disabled-border-color: rgb(33, 37, 41);
   --bs-gradient: none;
 }
 
@@ -7174,7 +7174,7 @@ textarea.form-control-lg {
 
 .text-bg-dark-color {
   color: #fff !important;
-  background-color: RGBA(0, 0, 0, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(33, 37, 41, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-snowWhite-color {
@@ -7266,8 +7266,8 @@ textarea.form-control-lg {
   text-decoration-color: RGBA(var(--bs-dark-color-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
 .link-dark-color:hover, .link-dark-color:focus {
-  color: RGBA(0, 0, 0, var(--bs-link-opacity, 1)) !important;
-  text-decoration-color: RGBA(0, 0, 0, var(--bs-link-underline-opacity, 1)) !important;
+  color: RGBA(26, 30, 33, var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(26, 30, 33, var(--bs-link-underline-opacity, 1)) !important;
 }
 
 .link-snowWhite-color {
@@ -12588,6 +12588,18 @@ p {
   display: none;
 }
 
+#modal__dark {
+  width: 100%;
+  height: 1000vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  display: none;
+}
+
 .img__container img {
   width: 80px;
   height: 80px;
@@ -12652,13 +12664,21 @@ p {
   direction: rtl;
 }
 
-.breadcrumb-item::before {
-  content: "<";
+.breadcrumb-item:not(.active)::after {
+  content: ">";
   margin: 0 5px;
 }
 
 .edit__icon {
   cursor: pointer;
+}
+
+.mobile__modal,
+.mail__modal,
+.password__modal,
+.birth__date__modal,
+.job__modal {
+  z-index: 200;
 }
 
 .modal__form input:focus {
@@ -12695,5 +12715,13 @@ p {
   }
   .full-height {
     height: 100vh;
+  }
+  .modal__name,
+  .mobile__modal,
+  .mail__modal,
+  .password__modal,
+  .birth__date__modal,
+  .job__modal {
+    width: 25% !important;
   }
 }/*# sourceMappingURL=main.css.map */
