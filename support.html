@@ -293,36 +293,80 @@
 
           <div class="mt-3">
             <h4 class="px-4 font-size-14">نمایش 1 تیکت</h4>
-            <div class="px-4 border">
-              <div class="mt-2">عضویت در گروه پشتیبانی js</div>
-              <div class="d-flex gap-2 align-items-center mt-2">
-                <div class="bg-lightGray-color p-2 rounded-4">
-                  <i class="fa-solid fa-ellipsis-vertical font-size-14"></i>
-                  <span>پشتیبانی دوره ها</span>
-                </div>
-                <i class="fa-regular fa-star font-size-14"></i>
-              </div>
-              <div class="d-flex gap-2 mt-3">
-                <span>alireza</span>
-                <div class="position-relative">
-                  <i class="message__icon fa-regular fa-message"></i>
-                  <span
-                    class="message__badge d-flex justify-content-center align-items-center position-absolute rounded-circle bg-darkOrange-color"
-                    >3</span
-                  >
-                </div>
-              </div>
-              <div>
-                <span class="font-size-14">آموزش js از مقدماتی تا پیشرفته</span>
-              </div>
-              <div>
-                <div
-                  class="small__circle inline-block w-25 h-25 bg-darkOrange-color"
-                ></div>
-                <span>بسته</span>
-              </div>
-              <div></div>
-              <div></div>
+            <div class="table__container table-responsive">
+              <table
+                class="ticket__table table table-striped table-sm table-hover text-center"
+              >
+                <thead>
+                  <tr>
+                    <th scope="col">عنوان</th>
+                    <th scope="col">دپارتمان</th>
+                    <th scope="col">وضعیت</th>
+                    <th scope="col">اولویت</th>
+                    <th scope="col">تاریخ</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" class="font-size-14">آموزش مقدماتی js</th>
+                    <td>برنامه نویسان</td>
+                    <td>باز</td>
+                    <td class="h-100">
+                      <span
+                        class="priority__high p-2 w--100 h-100 text-white-color"
+                        >بالا</span
+                      >
+                    </td>
+                    <td>1402/04/18</td>
+                    <td>
+                      <button
+                        class="border border-primary rounded-2 p-1 text-primary"
+                      >
+                        مشاهده
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="font-size-14">آموزش ASP.core</th>
+                    <td>برنامه نویسان</td>
+                    <td>باز</td>
+                    <td class="h-100">
+                      <span
+                        class="priority__medium p-2 w--100 h-100 text-white-color"
+                        >متوسط</span
+                      >
+                    </td>
+                    <td>1402/04/18</td>
+                    <td>
+                      <button
+                        class="border border-primary rounded-2 p-1 text-primary"
+                      >
+                        مشاهده
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="font-size-14">دوره پیشرفته PHP</th>
+                    <td>برنامه نویسان</td>
+                    <td>باز</td>
+                    <td class="h-100">
+                      <span
+                        class="priority__low p-2 w--100 h-100 text-white-color"
+                        >پایین</span
+                      >
+                    </td>
+                    <td>1402/04/18</td>
+                    <td>
+                      <button
+                        class="border border-primary rounded-2 p-1 text-primary"
+                      >
+                        مشاهده
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
