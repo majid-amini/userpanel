@@ -216,14 +216,14 @@ p {
   top: -5px;
   font-size: 12px;
 }
-.table__container {
-  max-height: 200px !important;
-  overflow-y: scroll;
-}
-.table__container2 {
-  max-height: 300px !important;
-  overflow-y: scroll;
-}
+// .table__container {
+//   max-height: 250px !important;
+//   overflow-y: scroll;
+// }
+// .table__container2 {
+//   max-height: 300px !important;
+//   overflow-y: scroll;
+// }
 .ticket__table tr td {
   vertical-align: middle;
 }
@@ -233,26 +233,53 @@ p {
 }
 .ticket__table .priority__high {
   display: inline-block;
-  width: 100%;
+  width: 50px;
   background-color: rgba(211, 108, 108, 0.671);
   border-radius: 10px;
-  padding: 0 10px;
+  padding: 10px;
 }
 .ticket__table .priority__medium {
   display: inline-block;
-  width: 100%;
+  width: 50px;
   background-color: rgba(226, 197, 32, 0.671);
   border-radius: 10px;
-  padding: 0 10px;
+  padding: 10px;
 }
 .ticket__table .priority__low {
   display: inline-block;
-  width: 100%;
+  width: 50px;
   background-color: rgba(107, 177, 50, 0.418);
   border-radius: 10px;
-  padding: 0 10px;
+  padding: 10px;
 }
+
+
+
 //support page
+
+
+//orders page 
+.tooltip {
+  position: relative;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.tooltip-trigger:hover + .tooltip-text {
+  visibility: visible;
+}
+
+//orders page
 @media (min-width: 300px) and (max-width: 768px) {
   .card__size,
   .assets {
