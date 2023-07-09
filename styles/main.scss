@@ -14,7 +14,8 @@ $theme-colors: (
   "lightGreen-color": #effcef,
   "lightBlue-color": #e6f5f9,
   "lightSilver-color": #f4f6fa,
-  "green-color": green,
+  "green-color": rgba(107, 177, 50, 0.418),
+  "red-color": rgba(211, 108, 108, 0.671),
 );
 
 @import "../node_modules/bootstrap/scss/bootstrap";
@@ -142,6 +143,9 @@ p {
 .font-size-14 {
   font-size: 14px;
 }
+.font-size-12 {
+  font-size: 12px;
+}
 .progress-container {
   width: 50px;
   height: 50px;
@@ -216,11 +220,14 @@ p {
   max-height: 200px !important;
   overflow-y: scroll;
 }
-.ticket__table tr td {
-vertical-align: middle;
-  
+.table__container2 {
+  max-height: 300px !important;
+  overflow-y: scroll;
 }
-.ticket__table tr   {
+.ticket__table tr td {
+  vertical-align: middle;
+}
+.ticket__table tr {
   height: 70px;
   vertical-align: middle;
 }
@@ -230,7 +237,6 @@ vertical-align: middle;
   background-color: rgba(211, 108, 108, 0.671);
   border-radius: 10px;
   padding: 0 10px;
-
 }
 .ticket__table .priority__medium {
   display: inline-block;

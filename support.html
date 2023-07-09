@@ -115,7 +115,7 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="./account.html">
               <div
                 class="d-flex align-items-center gap-2 border-bottom pb-3 px-1"
               >
@@ -125,7 +125,7 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="./orders.html">
               <div
                 class="d-flex align-items-center gap-2 border-bottom pb-3 px-1"
               >
@@ -145,7 +145,7 @@
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="./support.html">
               <div
                 class="d-flex align-items-center gap-2 border-bottom pb-3 px-1"
               >
@@ -172,7 +172,11 @@
         <div class="w-100 border rounded-4 shadow shadow-md">
           <h4 class="px-4 py-2">پشتیبانی</h4>
           <div class="px-4 font-size-14">
-            <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
+            <nav
+              style="--bs-breadcrumb-divider: ''"
+              aria-label="breadcrumb"
+              class="font-size-12"
+            >
               <ul class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">صفحه اصلی</a></li>
                 <li class="breadcrumb-item ps-0"><a href="#">صفحه دوم</a></li>
@@ -193,17 +197,17 @@
           </div>
 
           <div
-            class="ticket__total row g-2 d-flex justify-content-evenly mt-3 p-3"
+            class="ticket__total row g-2 d-flex justify-content-evenly mt-3 p-3 font-size-12"
           >
             <div
               class="col-5 col-xl-2 p-2 d-flex flex-column align-items-center gap-2 bg-lightGray-color"
             >
               <img src="./img/ticket.svg" alt="" />
-              <span class="font-size-14">باز</span>
+              <span>باز</span>
               <span>0</span>
             </div>
             <div
-              class="col-5 col-xl-2 p-2 d-flex flex-column align-items-center gap-2 bg-lightGray-color"
+              class="col-5 col-xl-2 p-2 d-flex flex-column align-items-center gap-2 bg-lightGray-color "
             >
               <div class="position-relative">
                 <img src="./img/ticket.svg" alt="" />
@@ -212,7 +216,7 @@
                   class="position-absolute small__circle rounded-circle bg-darkOrange-color"
                 ></span>
               </div>
-              <span class="font-size-14">بسته</span>
+              <span>بسته</span>
               <span class="text-darkOrange-color">1</span>
             </div>
             <div
@@ -226,33 +230,33 @@
                 ></span>
               </div>
 
-              <span class="font-size-14">پاسخ داده شده</span>
+              <span >پاسخ داده شده</span>
               <span class="text-green-color">0</span>
             </div>
             <div
               class="col-5 col-xl-2 p-2 d-flex flex-column align-items-center gap-2 bg-lightGray-color"
             >
               <img src="./img/ticket.svg" alt="" />
-              <span class="font-size-14">پایان یافته</span>
+              <span >پایان یافته</span>
               <span>0</span>
             </div>
             <div
               class="col-5 col-xl-2 p-2 d-flex flex-column align-items-center gap-2 bg-lightGray-color"
             >
               <img src="./img/ticket.svg" alt="" />
-              <span class="font-size-14">همه</span>
+              <span >همه</span>
               <span>0</span>
             </div>
           </div>
 
           <div
-            class="d-flex flex-wrap align-items-center px-3 py-2 w-100 gap-1"
+            class="d-flex flex-wrap align-items-center px-3 py-2 w-100 gap-1 font-size-12"
           >
             <div>
               <select
                 name=""
                 id=""
-                class="p-2 border w-auto font-size-14 rounded-2"
+                class="p-2 border w-auto  rounded-2"
               >
                 <option value="">همه</option>
                 <option value="">فرستاده شده</option>
@@ -263,7 +267,7 @@
               <select
                 name=""
                 id=""
-                class="p-2 border w-auto font-size-14 rounded-2"
+                class="p-2 border w-auto  rounded-2"
               >
                 <option value="">همه</option>
                 <option value="">باز</option>
@@ -276,7 +280,7 @@
               <select
                 name=""
                 id=""
-                class="p-2 border w-auto font-size-14 rounded-2"
+                class="p-2 border w-auto rounded-2"
               >
                 <option value="">تاریخ پاسخ</option>
                 <option value="">تاریخ ایجاد</option>
@@ -284,7 +288,7 @@
             </div>
             <div class="text-center w-auto">
               <button
-                class="border p-2 rounded-2 font-size-14 bg-green-color text-white-color"
+                class="border p-2 rounded-2 bg-green-color text-white-color"
               >
                 اعمال فیلترها
               </button>
@@ -295,7 +299,7 @@
             <h4 class="px-4 font-size-14">نمایش 1 تیکت</h4>
             <div class="table__container table-responsive">
               <table
-                class="ticket__table table table-striped table-sm table-hover text-center"
+                class="ticket__table table table-striped table-sm table-hover text-center font-size-12"
               >
                 <thead>
                   <tr>
@@ -309,12 +313,11 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row" class="font-size-14">آموزش مقدماتی js</th>
+                    <th scope="row">آموزش مقدماتی js</th>
                     <td>برنامه نویسان</td>
                     <td>باز</td>
                     <td class="h-100">
-                      <span
-                        class="priority__high p-2 w--100 h-100 text-white-color"
+                      <span class="priority__high p-2 h-100 text-white-color"
                         >بالا</span
                       >
                     </td>
@@ -328,12 +331,11 @@
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row" class="font-size-14">آموزش ASP.core</th>
+                    <th scope="row">آموزش ASP.core</th>
                     <td>برنامه نویسان</td>
                     <td>باز</td>
                     <td class="h-100">
-                      <span
-                        class="priority__medium p-2 w--100 h-100 text-white-color"
+                      <span class="priority__medium p-2 h-100 text-white-color"
                         >متوسط</span
                       >
                     </td>
@@ -347,12 +349,11 @@
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row" class="font-size-14">دوره پیشرفته PHP</th>
+                    <th scope="row">دوره پیشرفته PHP</th>
                     <td>برنامه نویسان</td>
                     <td>باز</td>
                     <td class="h-100">
-                      <span
-                        class="priority__low p-2 w--100 h-100 text-white-color"
+                      <span class="priority__low p-2 h-100 text-white-color"
                         >پایین</span
                       >
                     </td>
