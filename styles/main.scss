@@ -216,14 +216,7 @@ p {
   top: -5px;
   font-size: 12px;
 }
-// .table__container {
-//   max-height: 250px !important;
-//   overflow-y: scroll;
-// }
-// .table__container2 {
-//   max-height: 300px !important;
-//   overflow-y: scroll;
-// }
+
 .ticket__table tr td {
   vertical-align: middle;
 }
@@ -259,6 +252,10 @@ p {
 
 
 //orders page 
+.assets {
+  background-color: rgb(10,37,49);
+  overflow: hidden;
+}
 .tooltip {
   position: relative;
 }
@@ -278,7 +275,12 @@ p {
 .tooltip-trigger:hover + .tooltip-text {
   visibility: visible;
 }
-
+.side__background {
+  height: 150px;
+  background: url("../img/rocket.webp") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 //orders page
 @media (min-width: 300px) and (max-width: 768px) {
   .card__size,

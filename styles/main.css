@@ -13136,6 +13136,11 @@ p {
   padding: 10px;
 }
 
+.assets {
+  background-color: rgb(10, 37, 49);
+  overflow: hidden;
+}
+
 .tooltip {
   position: relative;
 }
@@ -13154,6 +13159,13 @@ p {
 
 .tooltip-trigger:hover + .tooltip-text {
   visibility: visible;
+}
+
+.side__background {
+  height: 150px;
+  background: url("../img/rocket.webp") no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 @media (min-width: 300px) and (max-width: 768px) {
