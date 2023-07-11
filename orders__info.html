@@ -173,27 +173,29 @@
             </nav>
           </div>
           <div>
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="d-flex align-items-center">
+            <div
+              class="d-flex flex-column flex-md-row gap-3 justify-content-between align-items-center"
+            >
+              <div class="d-flex align-items-center gap-3">
                 <a
                   href="./orders.html"
-                  class="w--100 d-flex flex-column align-items-center"
+                  class="w--100 d-flex flex-column align-items-center gap-1 border-start"
                 >
                   <i class="fa fa-arrow-right"></i>
-                  <span>بازگشت</span>
+                  <span class="font-size-12">بازگشت</span>
                 </a>
-                <div class="d-flex flex-column">
+                <div class="d-flex flex-column font-size-12">
                   <div>
                     <span>سفارش</span>
                     <span>AFCR25457</span>
                   </div>
-                  <div>
+                  <div class="d-sm-flex flex-col">
                     <span>ثبت شده در تاریخ</span>
                     <span>18 تیرماه 1402</span>
                   </div>
                 </div>
               </div>
-              <div class="px-4">
+              <div class="px-4 font-size-12">
                 <a href="" class="border p-2 rounded-3 bg-lightGray-color"
                   >مشاهده فاکتور</a
                 >
@@ -201,159 +203,165 @@
             </div>
 
             <div class="p-4">
-              <div class="w-100 row border">
+              <div class="w-100 row border rounded-3">
                 <div
-                  class="d-flex flex-column col-md-6 border-start border-bottom p-2"
+                  class="d-flex flex-column col-md-6 table--border--left border-bottom p-2"
                 >
-                  <span>نام و نام خانوادگی</span>
-                  <span>علی علیزاده</span>
+                  <span class="text-darkGray-color font-size-14"
+                    >نام و نام خانوادگی :</span
+                  >
+                  <span class="font-size-14">علی علیزاده</span>
                 </div>
                 <div class="d-flex flex-column col-md-6 border-bottom p-2">
-                  <span> شماره تماس تحویل گیرنده </span>
-                  <span>**** 0912-121</span>
-                </div>
-                <div
-                  class="d-flex flex-column col-md-6 border-start border-bottom p-2"
-                >
-                  <span> کد ملی </span>
-                  <span>001-2121212</span>
-                </div>
-                <div class="d-flex flex-column col-md-6 border-bottom p-2">
-                  <span> آدرس تحویل گیرنده</span>
-                  <span>خیابان شریعتی-خیابان ملک-کوچه ایرانیاد پ5</span>
+                  <span class="text-darkGray-color font-size-14">
+                    شماره تماس تحویل گیرنده :
+                  </span>
+                  <span class="font-size-14">**** 0912-121</span>
                 </div>
                 <div
-                  class="d-flex flex-column col-md-6 border-start border-bottom p-2"
+                  class="d-flex flex-column justify-content-center col-md-6 table--border--left border-bottom p-2"
                 >
-                  <span> تعداد مرسوله</span>
-                  <span>2 </span>
+                  <span class="text-darkGray-color font-size-14">
+                    کد ملی :
+                  </span>
+                  <span class="font-size-14">001-2121212</span>
                 </div>
                 <div class="d-flex flex-column col-md-6 border-bottom p-2">
-                  <span> کد تخفیف</span>
-                  <span>---- </span>
+                  <span class="font-size-14 text-darkGray-color"> آدرس تحویل گیرنده:</span>
+                  <span class="font-size-14"
+                    >خیابان شریعتی-خیابان ملک-کوچه ایرانیاد پ5</span
+                  >
                 </div>
-                <div class="d-flex flex-column col-md-6 border-start border-bottom p-2">
-                  <span> مبلغ قابل پرداخت </span>
-                  <span>2,000,000 تومان </span>
+                <div
+                  class="d-flex flex-column col-md-6 table--border--left border-bottom p-2"
+                >
+                  <span class="text-darkGray-color font-size-14">
+                    تعداد مرسوله :</span
+                  >
+                  <span class="font-size-14">2 </span>
                 </div>
                 <div class="d-flex flex-column col-md-6 border-bottom p-2">
-                  <span> مبلغ کل</span>
-                  <span>2,000,000 تومان </span>
+                  <span class="text-darkGray-color font-size-14">
+                    کد تخفیف :</span
+                  >
+                  <span class="font-size-14">---- </span>
                 </div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div
+                  class="d-flex flex-column col-md-6 table--border--left border-bottom p-2"
+                >
+                  <span class="text-darkGray-color font-size-14">
+                    مبلغ قابل پرداخت :</span
+                  >
+                  <span class="font-size-14">2,000,000 تومان </span>
+                </div>
+                <div class="d-flex flex-column col-md-6 border-bottom p-2">
+                  <span class="text-darkGray-color font-size-14">
+                    مبلغ کل :</span
+                  >
+                  <span class="font-size-14">2,000,000 تومان </span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="mt-3">
-            <div class="table-responsive table__container2">
-              <table
-                class="ticket__table table table-striped table-sm table-hover text-center"
-              >
-                <thead>
-                  <tr>
-                    <th scope="col" class="font-size-12">شماره سفارش</th>
-                    <th scope="col" class="font-size-12">عنوان سفارش</th>
-                    <th scope="col" class="font-size-12">تاریخ سفارش</th>
-                    <th scope="col" class="font-size-12">مبلغ</th>
-                    <th scope="col" class="font-size-12">وضعیت سفارش</th>
-                    <th scope="col"></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="font-size-12">
-                    <th scope="row">ANK154</th>
-                    <td
-                      class="w--100 word-break-break-all"
-                      title="آموزش مقدماتی PHP"
-                    >
-                      آموزش مقدماتی...
-                    </td>
-                    <td>1402/04/18</td>
-                    <td class="h-100">
-                      <span> 500,000 تومان</span>
-                    </td>
-                    <td>
-                      <span
-                        class="d-inline-block bg-green-color p-2 rounded-3 text-white-color"
-                        >موفق</span
-                      >
-                    </td>
-                    <td class="ps-5">
-                      <button
-                        class="border border-primary rounded-2 p-2 text-primary"
-                      >
-                        مشاهده
-                      </button>
-                    </td>
-                  </tr>
 
-                  <tr class="font-size-12">
-                    <th scope="row" class="font-size-12">ANK154</th>
-                    <td
-                      class="w--100 word-break-break-all"
-                      title="آموزش مقدماتی js"
-                    >
-                      آموزش مقدماتی...
-                    </td>
-                    <td>1402/04/18</td>
-                    <td class="h-100">
-                      <span>500,000 تومان</span>
-                    </td>
-                    <td>
-                      <span
-                        class="d-inline-block bg-red-color p-2 rounded-3 text-white-color"
-                        >ناموفق</span
-                      >
-                    </td>
-                    <td class="ps-5">
-                      <button
-                        class="border border-primary rounded-2 p-2 text-primary"
-                      >
-                        مشاهده
-                      </button>
-                    </td>
-                  </tr>
+            <div class="p-2">
+              <h4 class="p-2 fs-6">تحویل مرسوله به مشتری</h4>
 
-                  <tr class="font-size-12">
-                    <th scope="row">ANK154</th>
-                    <td>
-                      <span
-                        class="w--100 word-break-break-all"
-                        title="آموزش ابتدایی js"
-                        >آموزش ابتدا ...
-                      </span>
-                    </td>
+              <div class="flex-wrap flex-md-nowrap d-flex align-items-center">
+                <div
+                  class="proccess__card w-50 d-flex flex-column justify-content-center align-items-center my-2 gap-2"
+                >
+                  <img
+                    src="./img/supportCard.png"
+                    alt=""
+                    class="p-2 bg-green-color rounded-circle"
+                  />
+                  <span class="font-size-10 fw-bold">در صف بررسی</span>
+                </div>
+                <div
+                  class="chain__icon chain__icon--active d-none d-xl-flex justify-content-center align-items-center position-relative bg-green-color rounded-circle p-1"
+                >
+                  <i class="fa fa-check text-white-color font-size-14"></i>
+                </div>
+                <div
+                  class="proccess__card w-50 d-flex flex-column justify-content-center align-items-center my-2 opacity-50 gap-2"
+                >
+                  <img
+                    src="./img/notes.png"
+                    class="bg-extra-dark-color rounded-circle p-2"
+                    alt=""
+                  />
+                  <span class="font-size-10 fw-bold"> تایید سفارش</span>
+                </div>
+                <div
+                  class="chain__icon d-none d-xl-flex justify-content-center align-items-center position-relative bg-extra-dark-color text-white-color rounded-circle p-1 opacity-50"
+                >
+                  <i class="fa fa-check font-size-14"></i>
+                </div>
+                <div
+                  class="proccess__card w-50 d-flex flex-column justify-content-center align-items-center my-2 opacity-50 gap-2"
+                >
+                  <img
+                    src="./img/preparation.png"
+                    class="bg-extra-dark-color rounded-circle p-2"
+                    alt=""
+                  />
+                  <span class="font-size-10 fw-bold">آماده سازی سفارش </span>
+                </div>
+                <div
+                  class="chain__icon d-none d-xl-flex justify-content-center align-items-center position-relative bg-extra-dark-color rounded-circle p-1 opacity-50 text-white-color"
+                >
+                  <i class="fa fa-check font-size-14"></i>
+                </div>
+                <div
+                  class="proccess__card w-50 d-flex flex-column justify-content-center align-items-center my-2 opacity-50 gap-2"
+                >
+                  <img
+                    src="./img/truck.png"
+                    class="bg-extra-dark-color rounded-circle p-2"
+                    alt=""
+                  />
+                  <span class="font-size-10 fw-bold">
+                    خروج از مرکز پردازش
+                  </span>
+                </div>
+                <div
+                  class="chain__icon d-none d-xl-flex justify-content-center align-items-center position-relative bg-extra-dark-color rounded-circle p-1 opacity-50 text-white-color"
+                >
+                  <i class="fa fa-check font-size-14"></i>
+                </div>
 
-                    <td>1402/04/18</td>
-                    <td class="h-100">
-                      <span>5,500,000 تومان</span>
-                    </td>
-
-                    <td>
-                      <span
-                        class="d-inline-block bg-green-color p-2 rounded-3 text-white-color"
-                        >موفق</span
-                      >
-                    </td>
-                    <td class="ps-5">
-                      <button
-                        class="border border-primary rounded-2 p-2 text-primary"
-                      >
-                        مشاهده
-                      </button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                <div
+                  class="proccess__card w-50 d-flex flex-column justify-content-center align-items-center my-2 opacity-50 gap-2"
+                >
+                  <img
+                    src="./img/truck.png"
+                    class="bg-extra-dark-color rounded-circle p-2"
+                    alt=""
+                  />
+                  <span class="font-size-10 fw-bold"> تحویل به پست </span>
+                </div>
+                <div
+                  class="chain__icon d-none d-xl-flex justify-content-center align-items-center position-relative bg-extra-dark-color rounded-circle p-1 opacity-50 text-white-color"
+                >
+                  <i class="fa fa-check font-size-14"></i>
+                </div>
+                <div
+                  class="proccess__card w-50 d-flex flex-column justify-content-center align-items-center my-2 opacity-50 gap-2"
+                >
+                  <img
+                    src="./img/post-office.png"
+                    class="bg-extra-dark-color rounded-circle p-2"
+                    alt=""
+                  />
+                  <span class="font-size-10 fw-bold"> دریافت در مرکز پست </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         <div
-          class="assets position-relative d-flex flex-column justify-content-start gap-4 align-items-center rounded-4 shadow shadow-md w-100"
+          class="assets bg-dark-color position-relative d-flex flex-column justify-content-start gap-4 align-items-center rounded-4 shadow shadow-md w-100"
         >
           <div
             class="d-flex justify-content-center gap-3 gap-lg-2 align-items-center w-100 z-2 px-2"
