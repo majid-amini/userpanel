@@ -13321,6 +13321,9 @@ p {
   .table--border--left {
     border-left: 1px solid #eee;
   }
+  .border-bottom-md-none {
+    border-bottom: none !important;
+  }
 }
 @media (min-width: 1024px) {
   .aside {
