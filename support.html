@@ -170,7 +170,16 @@
         class="d-flex flex-column flex-lg-row gap-2 gap-xl-4 p-lg-4 mr-3 mr-md-0 w-100"
       >
         <div class="w-100 border rounded-4 shadow shadow-md">
-          <h4 class="px-4 py-3">پشتیبانی</h4>
+          <div class="d-flex justify-content-between align-items-center">
+            <h4 class="px-4 py-3">پشتیبانی</h4>
+            <a
+              href="./index.html"
+              class="w--100 d-flex flex-column align-items-center gap-1"
+            >
+              <i class="fa fa-arrow-right"></i>
+              <span class="font-size-12">بازگشت</span>
+            </a>
+          </div>
           <div class="px-4 font-size-14">
             <nav
               style="--bs-breadcrumb-divider: ''"
@@ -178,20 +187,19 @@
               class="font-size-12"
             >
               <ul class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">صفحه اصلی</a></li>
-                <li class="breadcrumb-item ps-0"><a href="#">صفحه دوم</a></li>
-                <li class="breadcrumb-item active" aria-current="page">
-                  صفحه سوم
-                </li>
+                <li class="breadcrumb-item"><a href="#"> پیشخوان</a></li>
+                <li class="breadcrumb-item ps-0"><a href="#"> پشتیبانی</a></li>
+              
               </ul>
             </nav>
           </div>
-          <div class="px-4">
-            <h4>همه تیکت ها</h4>
-          </div>
-
-          <div class="text-start px-4 py-4 border-bottom">
-            <a href="#" class="bg-primary p-2 text-white-color rounded-3"
+          <div
+            class="px-4 d-flex justify-content-between align-items-center border-bottom p-2"
+          >
+            <h4 class="fs-6 mb-0">همه تیکت ها</h4>
+            <a
+              href="./new__ticket.html"
+              class="bg-extra-dark-color p-2 text-white-color rounded-3 font-size-14"
               >ارسال تیکت جدید</a
             >
           </div>
@@ -207,7 +215,7 @@
               <span>0</span>
             </div>
             <div
-              class="col-5 col-xl-2 p-2 d-flex flex-column align-items-center gap-2 bg-lightGray-color "
+              class="col-5 col-xl-2 p-2 d-flex flex-column align-items-center gap-2 bg-lightGray-color"
             >
               <div class="position-relative">
                 <img src="./img/ticket.svg" alt="" />
@@ -230,21 +238,21 @@
                 ></span>
               </div>
 
-              <span >پاسخ داده شده</span>
+              <span>پاسخ داده شده</span>
               <span class="text-green-color">0</span>
             </div>
             <div
               class="col-5 col-xl-2 p-2 d-flex flex-column align-items-center gap-2 bg-lightGray-color"
             >
               <img src="./img/ticket.svg" alt="" />
-              <span >پایان یافته</span>
+              <span>پایان یافته</span>
               <span>0</span>
             </div>
             <div
               class="col-5 col-xl-2 p-2 d-flex flex-column align-items-center gap-2 bg-lightGray-color"
             >
               <img src="./img/ticket.svg" alt="" />
-              <span >همه</span>
+              <span>همه</span>
               <span>0</span>
             </div>
           </div>
@@ -253,22 +261,14 @@
             class="d-flex flex-wrap align-items-center px-3 py-2 w-100 gap-1 font-size-12"
           >
             <div>
-              <select
-                name=""
-                id=""
-                class="p-2 border w-auto  rounded-2"
-              >
+              <select name="" id="" class="p-2 border w-auto rounded-2">
                 <option value="">همه</option>
                 <option value="">فرستاده شده</option>
                 <option value="">دریافتی</option>
               </select>
             </div>
             <div>
-              <select
-                name=""
-                id=""
-                class="p-2 border w-auto  rounded-2"
-              >
+              <select name="" id="" class="p-2 border w-auto rounded-2">
                 <option value="">همه</option>
                 <option value="">باز</option>
                 <option value="">بسته</option>
@@ -277,11 +277,7 @@
               </select>
             </div>
             <div>
-              <select
-                name=""
-                id=""
-                class="p-2 border w-auto rounded-2"
-              >
+              <select name="" id="" class="p-2 border w-auto rounded-2">
                 <option value="">تاریخ پاسخ</option>
                 <option value="">تاریخ ایجاد</option>
               </select>
@@ -315,11 +311,9 @@
                   <tr>
                     <th scope="row">آموزش مقدماتی js</th>
                     <td>برنامه نویسان</td>
-                    <td>باز</td>
+                    <td><span class="priority__high h-100">باز</span></td>
                     <td class="h-100">
-                      <span class="priority__high p-2 h-100 text-white-color"
-                        >بالا</span
-                      >
+                      <span class="p-2 h-100">بالا</span>
                     </td>
                     <td>1402/04/18</td>
                     <td class="ps-3">
@@ -333,9 +327,9 @@
                   <tr>
                     <th scope="row">آموزش ASP.core</th>
                     <td>برنامه نویسان</td>
-                    <td>باز</td>
+                    <td><span class="priority__low h-100">بسته</span></td>
                     <td class="h-100">
-                      <span class="priority__medium p-2 h-100 text-white-color"
+                      <span class="p-2 h-100"
                         >متوسط</span
                       >
                     </td>
@@ -351,9 +345,9 @@
                   <tr>
                     <th scope="row">دوره پیشرفته PHP</th>
                     <td>برنامه نویسان</td>
-                    <td>باز</td>
+                    <td><span class="priority__high h-100">باز</span></td>
                     <td class="h-100">
-                      <span class="priority__low  h-100 text-white-color"
+                      <span class="h-100"
                         >پایین</span
                       >
                     </td>

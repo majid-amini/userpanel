@@ -13225,10 +13225,10 @@ p {
 
 .ticket__table .priority__high {
   display: inline-block;
+  padding: 10px;
   width: 50px;
   background-color: rgba(211, 108, 108, 0.671);
   border-radius: 10px;
-  padding: 10px;
 }
 
 .ticket__table .priority__medium {
@@ -13302,6 +13302,11 @@ p {
   background-color: green;
 }
 
+.textarea__resize {
+  resize: none;
+  padding: 10px;
+}
+
 @media (min-width: 300px) and (max-width: 768px) {
   .card__size,
   .assets {
@@ -13323,6 +13328,12 @@ p {
   }
   .border-bottom-md-none {
     border-bottom: none !important;
+  }
+  .textarea__resize::-moz-placeholder {
+    font-size: 14px;
+  }
+  .textarea__resize::placeholder {
+    font-size: 14px;
   }
 }
 @media (min-width: 1024px) {

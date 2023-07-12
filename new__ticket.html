@@ -3,7 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script> -->
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/reset.css" />
     <link
@@ -13,7 +23,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>پرداخت ها</title>
+    <title>پشتیبانی</title>
   </head>
 
   <body
@@ -52,7 +62,7 @@
                 </a>
               </li>
               <li id="nav_tab" class="border-bottom border-white pb-2">
-                <a href="./orders.html">
+                <a href="">
                   <div class="d-flex align-items-center gap-3 me-5">
                     <img src="./img/clipboardWhite.png" alt="" />
                     <span class="fw-bold"> سفارش ها</span>
@@ -68,7 +78,7 @@
                 </a>
               </li>
               <li id="nav_tab" class="border-bottom border-white pb-2">
-                <a href="./support.html">
+                <a href="">
                   <div class="d-flex align-items-center gap-3 me-5">
                     <img src="./img/supportWhite.png" alt="" />
                     <span class="fw-bold"> پشتیبانی</span>
@@ -161,146 +171,165 @@
       >
         <div class="w-100 border rounded-4 shadow shadow-md">
           <div class="d-flex justify-content-between align-items-center">
-            <h4 class="px-4 py-3">پرداخت ها</h4>
+            <h4 class="px-4 py-3">پشتیبانی</h4>
             <a
-              href="./index.html"
+              href="./support.html"
               class="w--100 d-flex flex-column align-items-center gap-1"
             >
               <i class="fa fa-arrow-right"></i>
               <span class="font-size-12">بازگشت</span>
             </a>
           </div>
-          <div class="px-4 font-size-12">
-            <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
+          <div class="px-4 font-size-14">
+            <nav
+              style="--bs-breadcrumb-divider: ''"
+              aria-label="breadcrumb"
+              class="font-size-12"
+            >
               <ul class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#"> پیشخوان</a></li>
-                <li class="breadcrumb-item ps-0"><a href="#"> پرداخت ها</a></li>
+                <li class="breadcrumb-item ps-0"><a href="#"> پشتیبانی</a></li>
               </ul>
             </nav>
           </div>
+          <div
+            class="px-4 d-flex justify-content-between align-items-center border-bottom p-2"
+          >
+            <h4 class="fs-6 mb-0">ساخت تیکت</h4>
+          </div>
 
           <div class="mt-3">
-            <div class="table-responsive table__container2">
+            <!-- <div class="table__container table-responsive">
               <table
-                class="ticket__table table table-striped table-sm table-hover text-center"
+                class="ticket__table table table-striped table-sm table-hover text-center font-size-12"
               >
                 <thead>
                   <tr>
-                    <th scope="col" class="font-size-12">شماره سفارش</th>
-                    <th scope="col" class="font-size-12">عنوان سفارش</th>
-                    <th scope="col" class="font-size-12">تاریخ سفارش</th>
-                    <th scope="col" class="font-size-12">مبلغ</th>
-                    <th scope="col" class="font-size-12">وضعیت سفارش</th>
+                    <th scope="col">عنوان</th>
+                    <th scope="col">دپارتمان</th>
+                    <th scope="col">وضعیت</th>
+                    <th scope="col">اولویت</th>
+                    <th scope="col">تاریخ</th>
                     <th scope="col"></th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr class="font-size-12">
-                    <th scope="row">ANK154</th>
-                    <td
-                      class="w--100 word-break-break-all"
-                      title="آموزش مقدماتی PHP"
-                    >
-                      آموزش مقدماتی...
+                  <tr>
+                    <th scope="row">آموزش مقدماتی js</th>
+                    <td>برنامه نویسان</td>
+                    <td><span class="priority__high h-100">باز</span></td>
+                    <td class="h-100">
+                      <span class="p-2 h-100">بالا</span>
                     </td>
                     <td>1402/04/18</td>
-                    <td class="h-100">
-                      <span> 500,000 تومان</span>
-                    </td>
-                    <td>
-                      <span
-                        class="d-inline-block bg-green-color p-2 rounded-3 text-white-color"
-                        >موفق</span
-                      >
-                    </td>
-                    <td class="ps-5">
-                      <a
-                        href="./payments__info.html"
-                        class="border border-primary rounded-2 p-2 text-primary"
+                    <td class="ps-3">
+                      <button
+                        class="border border-primary rounded-2 p-1 text-primary"
                       >
                         مشاهده
-                      </a>
+                      </button>
                     </td>
                   </tr>
-
-                  <tr class="font-size-12">
-                    <th scope="row" class="font-size-12">ANK154</th>
-                    <td
-                      class="w--100 word-break-break-all"
-                      title="آموزش مقدماتی js"
-                    >
-                      آموزش مقدماتی...
+                  <tr>
+                    <th scope="row">آموزش ASP.core</th>
+                    <td>برنامه نویسان</td>
+                    <td><span class="priority__low h-100">بسته</span></td>
+                    <td class="h-100">
+                      <span class="p-2 h-100">متوسط</span>
                     </td>
                     <td>1402/04/18</td>
-                    <td class="h-100">
-                      <span>500,000 تومان</span>
-                    </td>
-                    <td>
-                      <span
-                        class="d-inline-block bg-red-color p-2 rounded-3 text-white-color"
-                        >ناموفق</span
-                      >
-                    </td>
-                    <td class="ps-5">
-                      <a
-                        href="./payments__info.html"
-                        class="border border-primary rounded-2 p-2 text-primary"
+                    <td class="ps-3">
+                      <button
+                        class="border border-primary rounded-2 p-1 text-primary"
                       >
                         مشاهده
-                      </a>
+                      </button>
                     </td>
                   </tr>
-
-                  <tr class="font-size-12">
-                    <th scope="row">ANK154</th>
-                    <td>
-                      <span
-                        class="w--100 word-break-break-all"
-                        title="آموزش ابتدایی js"
-                        >آموزش ابتدا ...
-                      </span>
-                    </td>
-
-                    <td>1402/04/18</td>
+                  <tr>
+                    <th scope="row">دوره پیشرفته PHP</th>
+                    <td>برنامه نویسان</td>
+                    <td><span class="priority__high h-100">باز</span></td>
                     <td class="h-100">
-                      <span>5,500,000 تومان</span>
+                      <span class="h-100">پایین</span>
                     </td>
-
-                    <td>
-                      <span
-                        class="d-inline-block bg-green-color p-2 rounded-3 text-white-color"
-                        >موفق</span
-                      >
-                    </td>
-                    <td class="ps-5">
-                      <a
-                        href="./payments__info.html"
-                        class="border border-primary rounded-2 p-2 text-primary"
+                    <td>1402/04/18</td>
+                    <td class="ps-3">
+                      <button
+                        class="border border-primary rounded-2 p-1 text-primary"
                       >
                         مشاهده
-                      </a>
+                      </button>
                     </td>
                   </tr>
                 </tbody>
               </table>
-            </div>
+            </div> -->
+
+            <form action="" class="form-group px-3 py-2 row font-size-14">
+              <div
+                class="col-12 col-lg-6 d-flex  flex-md-row flex-column justify-content-center align-items-center gap-3 "
+              >
+                <label class="">عنوان</label>
+                <input type="text" class="w--200 border  p-1 rounded-2" />
+              </div>
+
+              <div
+                class="col-12 col-lg-6 mt-4 mt-md-0 d-flex flex-column flex-md-row  justify-content-center align-items-center gap-3"
+              >
+                <label class="">دپارتمان</label>
+                <select name="" id="" class="w--200 p-1 border rounded-2">
+                  <option value="">  مالی</option>
+                  <option value="">پشتیبانی فنی</option>
+                  <option value=""> مشاوره</option>
+                </select>
+              </div>
+
+              <div
+                class="col-12 col-lg-6  mt-4 d-flex flex-md-row flex-column justify-content-center align-items-center align-items-md-start gap-3"
+              >
+                <label>اولویت</label>
+                <select class="w--200 p-1 border rounded-2" name="" id="">
+                  <option value="">بالا</option>
+                  <option value="">متوسط</option>
+                  <option value="">کم</option>
+                </select>
+              </div>
+
+              <div class="col-12 col-lg-6 mt-4 d-flex flex-column flex-md-row justify-content-center align-items-center gap-2">
+                <label>متن پیام</label>
+                <textarea
+                  class="textarea__resize border rounded-2 mt-2 font-size-14"
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="متن تیکت را وارد نمائید..."
+                ></textarea>
+              </div>
+
+              <div class="text-center mt-3 col-12 ">
+                <div class="bg-black-color w--150 mx-auto p-2 rounded-2 font-size-14">
+                   <button class="bg-transparent text-white-color border-0" type="submit">ارسال تیکت</button>
+
+                    <img src="./img/send.png" alt="">
+                </div>
+              </div>
+            </form>
           </div>
         </div>
 
         <div
-          class="assets bg-dark-color position-relative d-flex flex-column justify-content-start gap-4 align-items-center rounded-4 shadow shadow-md w-100"
+          class="assets position-relative bg-dark-color d-flex flex-column justify-content-start p-2 gap-4 align-items-center rounded-4 shadow shadow-md w-100"
         >
           <div
-            class="d-flex justify-content-center gap-3 gap-lg-2 align-items-center w-100 z-2 px-2"
+            class="d-flex justify-content-center gap-3 gap-lg-2 align-items-center w-100 z-2"
           >
             <div
               class="bg-white-color p-2 w-h-30 d-flex justify-content-center align-items-center rounded-circle"
             >
               <i class="fa-regular fa-user"></i>
             </div>
-            <div
-              class="text-white-color d-flex flex-column text-right w--100 mt-2"
-            >
+            <div class="text-white-color d-flex flex-column text-right w--100">
               <span class="font-size-14 text-darkGray-color text-right">
                 تخفیفات استفاده شده
               </span>
@@ -310,7 +339,7 @@
             </div>
           </div>
           <div
-            class="d-flex justify-content-center gap-3 gap-lg-2 align-items-center w-100 z-2 px-2"
+            class="d-flex justify-content-center gap-3 gap-lg-2 align-items-center w-100 z-2"
           >
             <div
               class="bg-white-color p-2 w-h-30 d-flex justify-content-center align-items-center rounded-circle"
@@ -324,7 +353,7 @@
           </div>
 
           <div
-            class="d-flex justify-content-center gap-3 gap-lg-2 align-items-center w-100 z-2 px-2"
+            class="d-flex justify-content-center gap-3 gap-lg-2 align-items-center w-100 z-2"
           >
             <div
               class="bg-white-color p-2 w-h-30 d-flex justify-content-center align-items-center rounded-circle"
@@ -341,7 +370,7 @@
           </div>
 
           <div
-            class="d-flex justify-content-center gap-3 gap-lg-2 align-items-center w-100 z-2 px-2"
+            class="d-flex justify-content-center gap-3 gap-lg-2 align-items-center w-100 z-2"
           >
             <div
               class="bg-white-color p-2 w-h-30 d-flex justify-content-center align-items-center rounded-circle"
@@ -355,7 +384,7 @@
           </div>
 
           <div class="text-white-color mt-5 w-100 h-50">
-            <div class="side__background w-100"></div>
+            <div class="w-100 h-100"></div>
           </div>
         </div>
       </main>
@@ -368,7 +397,7 @@
       integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
       crossorigin="anonymous"
     ></script>
-    <script src="./progress.js"></script>
+    
     <script src="./script.js"></script>
   </body>
 </html>

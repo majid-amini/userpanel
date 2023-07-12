@@ -240,10 +240,10 @@ p {
 }
 .ticket__table .priority__high {
   display: inline-block;
+  padding: 10px;
   width: 50px;
   background-color: rgba(211, 108, 108, 0.671);
   border-radius: 10px;
-  padding: 10px;
 }
 .ticket__table .priority__medium {
   display: inline-block;
@@ -321,10 +321,18 @@ p {
 .chain__icon--active::before,
 .chain__icon--active::after {
   background-color: green;
-  
 }
 
 //orders__info
+
+
+//new ticket 
+.textarea__resize {
+  resize: none;
+  padding: 10px;
+}
+
+//new ticket
 @media (min-width: 300px) and (max-width: 768px) {
   .card__size,
   .assets {
@@ -346,6 +354,11 @@ p {
   }
   .border-bottom-md-none {
     border-bottom: none !important;
+  }
+  
+  .textarea__resize::placeholder {
+    font-size: 14px;
+    
   }
 }
 
