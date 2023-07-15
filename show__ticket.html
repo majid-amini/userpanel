@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="./styles/main.css" />
     <link rel="stylesheet" href="./styles/reset.css" />
     <link
@@ -13,7 +13,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>پرداخت ها</title>
+    <title>پشتیبانی</title>
   </head>
 
   <body
@@ -52,7 +52,7 @@
                 </a>
               </li>
               <li id="nav_tab" class="border-bottom border-white pb-2">
-                <a href="./orders.html">
+                <a href="">
                   <div class="d-flex align-items-center gap-3 me-5">
                     <img src="./img/clipboardWhite.png" alt="" />
                     <span class="fw-bold"> سفارش ها</span>
@@ -68,7 +68,7 @@
                 </a>
               </li>
               <li id="nav_tab" class="border-bottom border-white pb-2">
-                <a href="./support.html">
+                <a href="">
                   <div class="d-flex align-items-center gap-3 me-5">
                     <img src="./img/supportWhite.png" alt="" />
                     <span class="fw-bold"> پشتیبانی</span>
@@ -161,146 +161,104 @@
       >
         <div class="w-100 border rounded-4 shadow shadow-md">
           <div class="d-flex justify-content-between align-items-center">
-            <h4 class="px-4 py-3">پرداخت ها</h4>
+            <h4 class="px-4 py-3">پشتیبانی</h4>
             <a
-              href="./index.html"
+              href="./support.html"
               class="w--100 d-flex flex-column align-items-center gap-1"
             >
               <i class="fa fa-arrow-right"></i>
               <span class="font-size-12">بازگشت</span>
             </a>
           </div>
-          <div class="px-4 font-size-12">
-            <nav style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb">
+          <div class="px-4 font-size-14">
+            <nav
+              style="--bs-breadcrumb-divider: ''"
+              aria-label="breadcrumb"
+              class="font-size-12"
+            >
               <ul class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#"> پیشخوان</a></li>
-                <li class="breadcrumb-item ps-0 active"><a href="#"> پرداخت ها</a></li>
+                <li class="breadcrumb-item ps-0"><a href="#"> پشتیبانی</a></li>
+                <li class="breadcrumb-item ps-0 active">
+                  <a href="#"> مشاهده تیکت</a>
+                </li>
               </ul>
             </nav>
           </div>
+          <div class="px-4 d-flex justify-content-between align-items-center">
+            <h4 class="fs-6 mb-0">تیکت شماره ADF12</h4>
+          </div>
 
           <div class="mt-3">
-            <div class="table-responsive table__container2">
-              <table
-                class="ticket__table table table-striped table-sm table-hover text-center"
+            <div class=" position-relative mt-2 text-center">
+              <div
+                class="d-flex justify-content-start align-items-center gap-2 px-4"
               >
-                <thead>
-                  <tr>
-                    <th scope="col" class="font-size-12">شماره سفارش</th>
-                    <th scope="col" class="font-size-12">عنوان سفارش</th>
-                    <th scope="col" class="font-size-12">تاریخ سفارش</th>
-                    <th scope="col" class="font-size-12">مبلغ</th>
-                    <th scope="col" class="font-size-12">وضعیت سفارش</th>
-                    <th scope="col"></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="font-size-12">
-                    <th scope="row">ANK154</th>
-                    <td
-                      class="w--100 word-break-break-all"
-                      title="آموزش مقدماتی PHP"
+                <span
+                  class="send__answer__icon d-flex align-items-center gap-2 position-relative bg-darkGray-color p-1 rounded-3"
+                  >ارسال پاسخ</span
+                >
+              </div>
+              <div class="answer__container mt-4 px-4 text-end d-none">
+                <span class="d-block text-end">متن تیکت را وارد نمائید</span>
+                <form action="" class="mt-2">
+                  <textarea class="border rounded-2" cols="30" rows="10"></textarea>
+                  <div
+                    class="bg-black-color text-center mt-2 w--150 px-2 py-1 rounded-2 font-size-14"
+                  >
+                    <button
+                      class="bg-transparent text-white-color border-0"
+                      type="submit"
                     >
-                      آموزش مقدماتی...
-                    </td>
-                    <td>1402/04/18</td>
-                    <td class="h-100">
-                      <span> 500,000 تومان</span>
-                    </td>
-                    <td>
-                      <span
-                        class="d-inline-block bg-green-color p-2 rounded-3 text-white-color"
-                        >موفق</span
-                      >
-                    </td>
-                    <td class="ps-5">
-                      <a
-                        href="./payments__info.html"
-                        class="border border-primary rounded-2 p-2 text-primary"
-                      >
-                        مشاهده
-                      </a>
-                    </td>
-                  </tr>
+                      ارسال تیکت
+                    </button>
 
-                  <tr class="font-size-12">
-                    <th scope="row" class="font-size-12">ANK154</th>
-                    <td
-                      class="w--100 word-break-break-all"
-                      title="آموزش مقدماتی js"
-                    >
-                      آموزش مقدماتی...
-                    </td>
-                    <td>1402/04/18</td>
-                    <td class="h-100">
-                      <span>500,000 تومان</span>
-                    </td>
-                    <td>
-                      <span
-                        class="d-inline-block bg-red-color p-2 rounded-3 text-white-color"
-                        >ناموفق</span
-                      >
-                    </td>
-                    <td class="ps-5">
-                      <a
-                        href="./payments__info.html"
-                        class="border border-primary rounded-2 p-2 text-primary"
-                      >
-                        مشاهده
-                      </a>
-                    </td>
-                  </tr>
-
-                  <tr class="font-size-12">
-                    <th scope="row">ANK154</th>
-                    <td>
-                      <span
-                        class="w--100 word-break-break-all"
-                        title="آموزش ابتدایی js"
-                        >آموزش ابتدا ...
-                      </span>
-                    </td>
-
-                    <td>1402/04/18</td>
-                    <td class="h-100">
-                      <span>5,500,000 تومان</span>
-                    </td>
-
-                    <td>
-                      <span
-                        class="d-inline-block bg-green-color p-2 rounded-3 text-white-color"
-                        >موفق</span
-                      >
-                    </td>
-                    <td class="ps-5">
-                      <a
-                        href="./payments__info.html"
-                        class="border border-primary rounded-2 p-2 text-primary"
-                      >
-                        مشاهده
-                      </a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                    <img src="./img/send.png" class="send__icon" alt="" />
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="mt-4 w-75 px-2 bg-darkGray-color py-2 me-4 rounded-top">
+              <p class="font-size-14">
+                درود وقت بخیر خواستم بپرسم دوره ی js چه تاریخی استارت می خوره؟
+              </p>
+            </div>
+            <div class="mt-2 px-4">
+              <span>1402/04/22</span>
+              <span>09:30</span>
+            </div>
+            <div class="send__answer position-relative mt-4 text-center">
+              <div
+                class="d-flex justify-content-center align-items-center gap-2"
+              >
+                <span class="position-relative bg-darkGray-color p-1 rounded-3">
+                  پاسخ ها</span
+                >
+              </div>
+            </div>
+            <div
+              class="w-75 bg-darkGray-color mt-4 px-4 py-2 me-4 font-size-14 rounded-top mb-4"
+            >
+              <p>
+                سلام وقت به خیر به احتمال زیاد اواخر مرداد ماه بهتون اطلاع
+                میدیم.
+              </p>
             </div>
           </div>
         </div>
 
         <div
-          class="assets bg-dark-color position-relative d-flex flex-column justify-content-start gap-4 align-items-center rounded-4 shadow shadow-md w-100"
+          class="assets position-relative bg-dark-color d-flex flex-column justify-content-start p-2 gap-4 align-items-center rounded-4 shadow shadow-md w-100"
         >
           <div
-            class="d-flex justify-content-center gap-3 gap-lg-2 align-items-center w-100 z-2 px-2"
+            class="d-flex justify-content-center gap-3 gap-lg-2 align-items-center w-100 z-2"
           >
             <div
               class="bg-white-color p-2 w-h-30 d-flex justify-content-center align-items-center rounded-circle"
             >
               <i class="fa-regular fa-user"></i>
             </div>
-            <div
-              class="text-white-color d-flex flex-column text-right w--100 mt-2"
-            >
+            <div class="text-white-color d-flex flex-column text-right w--100">
               <span class="font-size-14 text-darkGray-color text-right">
                 تخفیفات استفاده شده
               </span>
@@ -310,7 +268,7 @@
             </div>
           </div>
           <div
-            class="d-flex justify-content-center gap-3 gap-lg-2 align-items-center w-100 z-2 px-2"
+            class="d-flex justify-content-center gap-3 gap-lg-2 align-items-center w-100 z-2"
           >
             <div
               class="bg-white-color p-2 w-h-30 d-flex justify-content-center align-items-center rounded-circle"
@@ -324,7 +282,7 @@
           </div>
 
           <div
-            class="d-flex justify-content-center gap-3 gap-lg-2 align-items-center w-100 z-2 px-2"
+            class="d-flex justify-content-center gap-3 gap-lg-2 align-items-center w-100 z-2"
           >
             <div
               class="bg-white-color p-2 w-h-30 d-flex justify-content-center align-items-center rounded-circle"
@@ -341,7 +299,7 @@
           </div>
 
           <div
-            class="d-flex justify-content-center gap-3 gap-lg-2 align-items-center w-100 z-2 px-2"
+            class="d-flex justify-content-center gap-3 gap-lg-2 align-items-center w-100 z-2"
           >
             <div
               class="bg-white-color p-2 w-h-30 d-flex justify-content-center align-items-center rounded-circle"
@@ -355,7 +313,7 @@
           </div>
 
           <div class="text-white-color mt-5 w-100 h-50">
-            <div class="side__background w-100"></div>
+            <div class="w-100 h-100"></div>
           </div>
         </div>
       </main>
@@ -368,7 +326,11 @@
       integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
       crossorigin="anonymous"
     ></script>
-    <script src="./progress.js"></script>
+    <script>
+        $(".send__answer__icon").click(function(){
+            $(".answer__container").toggleClass("d-none")
+        })
+    </script>
     <script src="./script.js"></script>
   </body>
 </html>

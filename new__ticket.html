@@ -188,7 +188,9 @@
             >
               <ul class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#"> پیشخوان</a></li>
-                <li class="breadcrumb-item ps-0"><a href="#"> پشتیبانی</a></li>
+                <li class="breadcrumb-item ps-0 active">
+                  <a href="#"> پشتیبانی</a>
+                </li>
               </ul>
             </nav>
           </div>
@@ -199,94 +201,27 @@
           </div>
 
           <div class="mt-3">
-            <!-- <div class="table__container table-responsive">
-              <table
-                class="ticket__table table table-striped table-sm table-hover text-center font-size-12"
-              >
-                <thead>
-                  <tr>
-                    <th scope="col">عنوان</th>
-                    <th scope="col">دپارتمان</th>
-                    <th scope="col">وضعیت</th>
-                    <th scope="col">اولویت</th>
-                    <th scope="col">تاریخ</th>
-                    <th scope="col"></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">آموزش مقدماتی js</th>
-                    <td>برنامه نویسان</td>
-                    <td><span class="priority__high h-100">باز</span></td>
-                    <td class="h-100">
-                      <span class="p-2 h-100">بالا</span>
-                    </td>
-                    <td>1402/04/18</td>
-                    <td class="ps-3">
-                      <button
-                        class="border border-primary rounded-2 p-1 text-primary"
-                      >
-                        مشاهده
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">آموزش ASP.core</th>
-                    <td>برنامه نویسان</td>
-                    <td><span class="priority__low h-100">بسته</span></td>
-                    <td class="h-100">
-                      <span class="p-2 h-100">متوسط</span>
-                    </td>
-                    <td>1402/04/18</td>
-                    <td class="ps-3">
-                      <button
-                        class="border border-primary rounded-2 p-1 text-primary"
-                      >
-                        مشاهده
-                      </button>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">دوره پیشرفته PHP</th>
-                    <td>برنامه نویسان</td>
-                    <td><span class="priority__high h-100">باز</span></td>
-                    <td class="h-100">
-                      <span class="h-100">پایین</span>
-                    </td>
-                    <td>1402/04/18</td>
-                    <td class="ps-3">
-                      <button
-                        class="border border-primary rounded-2 p-1 text-primary"
-                      >
-                        مشاهده
-                      </button>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div> -->
-
             <form action="" class="form-group px-3 py-2 row font-size-14">
               <div
-                class="col-12 col-lg-6 d-flex  flex-md-row flex-column justify-content-center align-items-center gap-3 "
+                class="col-12 col-lg-6 d-flex flex-md-row flex-column justify-content-center align-items-center gap-3"
               >
                 <label class="">عنوان</label>
-                <input type="text" class="w--200 border  p-1 rounded-2" />
+                <input type="text" class="w--200 border p-1 rounded-2" />
               </div>
 
               <div
-                class="col-12 col-lg-6 mt-4 mt-md-0 d-flex flex-column flex-md-row  justify-content-center align-items-center gap-3"
+                class="col-12 col-lg-6 mt-4 mt-md-0 d-flex flex-column flex-md-row justify-content-center align-items-center gap-3"
               >
                 <label class="">دپارتمان</label>
                 <select name="" id="" class="w--200 p-1 border rounded-2">
-                  <option value="">  مالی</option>
+                  <option value="">مالی</option>
                   <option value="">پشتیبانی فنی</option>
-                  <option value=""> مشاوره</option>
+                  <option value="">مشاوره</option>
                 </select>
               </div>
 
               <div
-                class="col-12 col-lg-6  mt-4 d-flex flex-md-row flex-column justify-content-center align-items-center align-items-md-start gap-3"
+                class="col-12 col-lg-6 mt-4 d-flex flex-md-row flex-column justify-content-center align-items-center align-items-md-start gap-3"
               >
                 <label>اولویت</label>
                 <select class="w--200 p-1 border rounded-2" name="" id="">
@@ -296,7 +231,9 @@
                 </select>
               </div>
 
-              <div class="col-12 col-lg-6 mt-4 d-flex flex-column flex-md-row justify-content-center align-items-center gap-2">
+              <div
+                class="col-12 col-lg-6 mt-4 d-flex flex-column flex-md-row justify-content-center align-items-center gap-2"
+              >
                 <label>متن پیام</label>
                 <textarea
                   class="textarea__resize border rounded-2 mt-2 font-size-14"
@@ -307,11 +244,18 @@
                 ></textarea>
               </div>
 
-              <div class="text-center mt-3 col-12 ">
-                <div class="bg-black-color w--150 mx-auto p-2 rounded-2 font-size-14">
-                   <button class="bg-transparent text-white-color border-0" type="submit">ارسال تیکت</button>
+              <div class="text-center mt-3 col-12">
+                <div
+                  class="bg-black-color w--150 mx-auto px-2 py-1  rounded-2 font-size-14"
+                >
+                  <button
+                    class="bg-transparent text-white-color border-0"
+                    type="submit"
+                  >
+                    ارسال تیکت
+                  </button>
 
-                    <img src="./img/send.png" alt="">
+                  <img src="./img/send.png" class="send__icon" alt="" />
                 </div>
               </div>
             </form>
@@ -397,7 +341,7 @@
       integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
       crossorigin="anonymous"
     ></script>
-    
+
     <script src="./script.js"></script>
   </body>
 </html>

@@ -331,8 +331,46 @@ p {
   resize: none;
   padding: 10px;
 }
+.send__icon {
+  width: 20px;
 
+}
 //new ticket
+
+//show__ticket
+
+
+.send__answer::before {
+  content: '';
+  position: absolute;
+  width: 40%;
+  height: 1px;
+  background-color: #ccc;
+  left: 0;
+  top: 50%;
+  // transform: translateX(20px);
+}
+.send__answer::after {
+  content: '';
+  position: absolute;
+  width: 40%;
+  height: 1px;
+  background-color: #ccc;
+  right: 0;
+  top: 50%;
+  // transform: translateX(-20px);
+}
+.send__answer__icon {
+  cursor: pointer;
+}
+.send__answer__icon::after {
+  content: '\2b';
+
+}
+
+
+
+//show__ticket
 @media (min-width: 300px) and (max-width: 768px) {
   .card__size,
   .assets {

@@ -112,6 +112,9 @@ $(document).ready(function () {
     $(".job__modal").addClass("d-none");
     $("#modal__dark").css("display", "none");
   });
+
+
+  
 });
 
 $(window).scroll(function () {
