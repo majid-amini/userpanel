@@ -12985,6 +12985,10 @@ p {
   font-family: "iranyekan";
 }
 
+.center--items {
+  top: 100px;
+}
+
 #navigator {
   width: 270px;
   height: 100%;
@@ -13110,6 +13114,14 @@ p {
 
 .w--200 {
   width: 200px;
+}
+
+.w-400 {
+  width: 300px;
+}
+
+.h-700 {
+  height: 500px;
 }
 
 .w-700 {
@@ -13303,7 +13315,6 @@ p {
 }
 
 .textarea__resize {
-  resize: none;
   padding: 10px;
 }
 
@@ -13389,5 +13400,8 @@ p {
   .w-500 {
     width: 700px !important;
     overflow-x: scroll;
+  }
+  .ticket__text__info {
+    width: 500px !important;
   }
 }/*# sourceMappingURL=main.css.map */

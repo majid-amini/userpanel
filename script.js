@@ -113,8 +113,7 @@ $(document).ready(function () {
     $("#modal__dark").css("display", "none");
   });
 
-
-  
+ 
 });
 
 $(window).scroll(function () {

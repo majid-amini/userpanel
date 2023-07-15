@@ -37,7 +37,9 @@ div,
 p {
   font-family: "iranyekan";
 }
-
+.center--items {
+  top: 100px;
+}
 #navigator {
   width: 270px;
   height: 100%;
@@ -143,6 +145,12 @@ p {
 }
 .w--200 {
   width: 200px;
+}
+.w-400 {
+  width: 300px;
+}
+.h-700 {
+  height: 500px;
 }
 .w-700 {
   width: 700px;
@@ -325,23 +333,19 @@ p {
 
 //orders__info
 
-
-//new ticket 
+//new ticket
 .textarea__resize {
-  resize: none;
   padding: 10px;
 }
 .send__icon {
   width: 20px;
-
 }
 //new ticket
 
 //show__ticket
 
-
 .send__answer::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 40%;
   height: 1px;
@@ -351,7 +355,7 @@ p {
   // transform: translateX(20px);
 }
 .send__answer::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 40%;
   height: 1px;
@@ -364,11 +368,8 @@ p {
   cursor: pointer;
 }
 .send__answer__icon::after {
-  content: '\2b';
-
+  content: "\2b";
 }
-
-
 
 //show__ticket
 @media (min-width: 300px) and (max-width: 768px) {
@@ -393,10 +394,9 @@ p {
   .border-bottom-md-none {
     border-bottom: none !important;
   }
-  
+
   .textarea__resize::placeholder {
     font-size: 14px;
-    
   }
 }
 
@@ -421,5 +421,8 @@ p {
   .w-500 {
     width: 700px !important;
     overflow-x: scroll;
+  }
+  .ticket__text__info {
+    width: 500px !important;
   }
 }
