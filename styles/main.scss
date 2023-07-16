@@ -370,7 +370,9 @@ p {
 .send__answer__icon::after {
   content: "\2b";
 }
-
+.nav__full__height {
+  margin-top: 220px !important;
+}
 //show__ticket
 @media (min-width: 300px) and (max-width: 768px) {
   .card__size,

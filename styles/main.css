@@ -13350,6 +13350,10 @@ p {
   content: "+";
 }
 
+.nav__full__height {
+  margin-top: 220px !important;
+}
+
 @media (min-width: 300px) and (max-width: 768px) {
   .card__size,
   .assets {
